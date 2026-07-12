@@ -27,5 +27,11 @@ namespace DVLD_Project_Version_1._0
         {
             Application.Restart();
         }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmManageUsers Users = new frmManageUsers();
+            Users.ShowDialog();
+        }
     }
 }

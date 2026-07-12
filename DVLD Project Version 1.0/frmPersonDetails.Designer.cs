@@ -28,28 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.ctrlPersonDetails = new DVLD_Project_Version_1._0.PersonDetails();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.ctrlPersonDetails = new DVLD_Project_Version_1._0.PersonDetails();
             this.SuspendLayout();
-            // 
-            // ctrlPersonDetails
-            // 
-            this.ctrlPersonDetails.Address = null;
-            this.ctrlPersonDetails.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ctrlPersonDetails.Country = null;
-            this.ctrlPersonDetails.DateOfBirth = null;
-            this.ctrlPersonDetails.Email = null;
-            this.ctrlPersonDetails.FullName = "ctrlPersonDetails";
-            this.ctrlPersonDetails.Gender = null;
-            this.ctrlPersonDetails.ImagePath = null;
-            this.ctrlPersonDetails.Location = new System.Drawing.Point(12, 94);
-            this.ctrlPersonDetails.Name = "ctrlPersonDetails";
-            this.ctrlPersonDetails.NationalNo = null;
-            this.ctrlPersonDetails.PersonID = null;
-            this.ctrlPersonDetails.Phone = null;
-            this.ctrlPersonDetails.Size = new System.Drawing.Size(883, 277);
-            this.ctrlPersonDetails.TabIndex = 0;
             // 
             // label1
             // 
@@ -74,6 +56,23 @@
             this.button1.Text = "Close";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // ctrlPersonDetails
+            // 
+            this.ctrlPersonDetails.Address = null;
+            this.ctrlPersonDetails.Country = null;
+            this.ctrlPersonDetails.DateOfBirth = null;
+            this.ctrlPersonDetails.Email = null;
+            this.ctrlPersonDetails.FullName = "ctrlPersonDetails";
+            this.ctrlPersonDetails.Gender = null;
+            this.ctrlPersonDetails.ImagePath = null;
+            this.ctrlPersonDetails.Location = new System.Drawing.Point(12, 94);
+            this.ctrlPersonDetails.Name = "ctrlPersonDetails";
+            this.ctrlPersonDetails.NationalNo = null;
+            this.ctrlPersonDetails.PersonID = null;
+            this.ctrlPersonDetails.Phone = null;
+            this.ctrlPersonDetails.Size = new System.Drawing.Size(883, 277);
+            this.ctrlPersonDetails.TabIndex = 0;
             // 
             // Person_Details
             // 

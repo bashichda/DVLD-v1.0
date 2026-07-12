@@ -50,5 +50,10 @@ namespace DVLD_BusinessLayer
             }
         }
 
+        public static DataTable GetAllUsersInfo()
+        {
+            return clsUsersDataAccess.GetAllUsersInfo();
+        }
+
     }
 }

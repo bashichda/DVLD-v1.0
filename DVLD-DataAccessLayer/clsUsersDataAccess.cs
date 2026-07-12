@@ -50,5 +50,46 @@ namespace DVLD_DataAccessLayer
 
             return isFound;
         }
+
+        public static DataTable GetAllUsersInfo()
+        {
+            DataTable dt = new DataTable();
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
+
+            string query = @"Select UserID,
+                                    Users.PersonID,
+                                    CONCAT_WS(' ', People.FirstName, People.SecondName, People.ThirdName, People.LastName) As FullName,
+                                    UserName,
+                                    IsActive 
+                            From Users
+                            Inner Join People on People.PersonID = Users.PersonID;";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            try
+            {
+                connection.Open();
+
+                SqlDataReader reader = command.ExecuteReader();
+
+                if (reader.HasRows)
+                {
+                    dt.Load(reader);
+                }
+
+                reader.Close();
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
+            }
+
+            return dt;
+        }
     }
 }
