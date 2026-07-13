@@ -53,7 +53,7 @@ namespace DVLD_DataAccessLayer
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
 
-            string query = @"Select CountryName From Countries Where CountryName = @CountryName;";
+            string query = @"Select CountryID From Countries Where CountryName = @CountryName;";
 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@CountryName", CountryName);

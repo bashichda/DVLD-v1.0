@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Global Classes\clsUtil.cs" />
+    <Compile Include="Global Classes\clsValidation.cs" />
     <Compile Include="People\frmEditUpdatePerson.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,5 +301,6 @@
   <ItemGroup>
     <None Include="Resources\Release Detained License 32.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

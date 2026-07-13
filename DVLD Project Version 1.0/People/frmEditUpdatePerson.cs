@@ -60,15 +60,15 @@ namespace DVLD_Project_Version_1._0
 
             if (rdMale.Checked == true)
             {
-                pictureBox1.Image = Resources.Man;
+                pbPersonImage.Image = Resources.Man;
             }
             else
             {
-                pictureBox1.Image = Resources.woman;
+                pbPersonImage.Image = Resources.woman;
             }
 
             //Hid/Show the remove linke incase there is no Image fot the person:
-            llRemoveImage.Visible = (pictureBox1.ImageLocation != null);
+            llRemoveImage.Visible = (pbPersonImage.ImageLocation != null);
 
             //we set the max date to 18 year from today, and set the default value the same:
             dtPicker.MaxDate = DateTime.Today.AddYears(-18);
@@ -116,6 +116,7 @@ namespace DVLD_Project_Version_1._0
             txtFirstName.Text = _Person.FirstName;
             txtSecondName.Text = _Person.SecondName;
             txtThirdName.Text = _Person.ThirdName;
+            txtLastName.Text = _Person.LastName;
             txtNationalNo.Text = _Person.NationalNo;
             dtPicker.Value = _Person.DateOfBirth;
             
@@ -132,15 +133,58 @@ namespace DVLD_Project_Version_1._0
 
             if (_Person.ImagePath != "")
             {
-                pictureBox1.ImageLocation = _Person.ImagePath;
+                pbPersonImage.ImageLocation = _Person.ImagePath;
             }
 
-            llRemoveImage.Visible = (pictureBox1.ImageLocation != "");
+            llRemoveImage.Visible = (pbPersonImage.ImageLocation != "");
         }
 
-        private void _HandlePersonImage()
+        private bool _HandlePersonImage()
         {
 
+            //this procedure will handle the person image,
+            //it will take care of deleting the old image from the folder
+            //in case the image changed. and it will rename the new image with guid and 
+            // place it in the images folder.
+
+
+            //_Person.ImagePath contains the old Image, we check if it changed then we copy the new image
+            if (_Person.ImagePath != pbPersonImage.ImageLocation)
+            {
+                if (_Person.ImagePath != "")
+                {
+                    //first we delete the old image from the folder in case there is any.
+
+                    try
+                    {
+                        File.Delete(_Person.ImagePath);
+                    }
+                    catch (IOException)
+                    {
+                        // We could not delete the file.
+                        //log it later   
+                    }
+                }
+
+                if (pbPersonImage.ImageLocation != null)
+                {
+                    //then we copy the new image to the image folder after we rename it
+                    string SourceImageFile = pbPersonImage.ImageLocation.ToString();
+
+                    if (clsUtil.CopyImageToProjectImagesFolder(ref SourceImageFile))
+                    {
+                        pbPersonImage.ImageLocation = SourceImageFile;
+                        return true;
+                    }
+                    else
+                    {
+                        MessageBox.Show("Error Copying Image File", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return false;
+                    }
+                }
+
+            }
+            return true;
         }
 
         private void frmEditUpdatePerson_Load(object sender, EventArgs e)
@@ -162,10 +206,10 @@ namespace DVLD_Project_Version_1._0
                 return;
             }
 
-            //if (!_HandlePersonImage())
-            //{
-            //    return;
-            //}
+            if (!_HandlePersonImage())
+            {
+                return;
+            }
 
             int NationalCountryID = clsCountry.Find(cbCountries.Text).CountryID;
 
@@ -175,7 +219,7 @@ namespace DVLD_Project_Version_1._0
             _Person.LastName = txtLastName.Text.Trim();
             _Person.NationalNo = txtNationalNo.Text.Trim();
             _Person.Email = txtEmail.Text.Trim();
-            _Person.Phone = txtEmail.Text.Trim();
+            _Person.Phone = txtPhone.Text.Trim();
             _Person.Address = txtAddress.Text.Trim();
             _Person.DateOfBirth = dtPicker.Value;
 
@@ -186,10 +230,11 @@ namespace DVLD_Project_Version_1._0
 
             _Person.NationalCountryID = NationalCountryID;
 
-            if (pictureBox1.ImageLocation != null)
-                _Person.ImagePath = pictureBox1.ImageLocation;
+            if (pbPersonImage.ImageLocation != null)
+                _Person.ImagePath = pbPersonImage.ImageLocation;
             else
                 _Person.ImagePath = "";
+
 
             if (_Person.Save())
             {
@@ -269,17 +314,17 @@ namespace DVLD_Project_Version_1._0
 
         private void rdMale_CheckedChanged(object sender, EventArgs e)
         {
-            if (pictureBox1.ImageLocation == null)
+            if (pbPersonImage.ImageLocation == null)
             {
-                pictureBox1.Image = Resources.Man;
+                pbPersonImage.Image = Resources.Man;
             }
         }
 
         private void rdFemale_CheckedChanged(object sender, EventArgs e)
         {
-            if (pictureBox1.ImageLocation == null)
+            if (pbPersonImage.ImageLocation == null)
             {
-                pictureBox1.Image = Resources.woman;
+                pbPersonImage.Image = Resources.woman;
             }
         }
 
@@ -292,22 +337,22 @@ namespace DVLD_Project_Version_1._0
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string selectedFilePath = openFileDialog1.FileName;
-                pictureBox1.Load(selectedFilePath);
+                pbPersonImage.Load(selectedFilePath);
                 llRemoveImage.Visible = true;
             }
         }
 
         private void llRemoveImage_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            pictureBox1.ImageLocation = null;
+            pbPersonImage.ImageLocation = null;
 
             if (rdMale.Checked)
             {
-                pictureBox1.Image = Resources.Man;
+                pbPersonImage.Image = Resources.Man;
             }
             else
             {
-                pictureBox1.Image = Resources.woman;
+                pbPersonImage.Image = Resources.woman;
             }
 
             llRemoveImage.Visible = false;
