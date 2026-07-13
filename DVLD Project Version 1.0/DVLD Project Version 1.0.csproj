@@ -254,5 +254,50 @@
   <ItemGroup>
     <None Include="Resources\add User.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\driver-license.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ManageApplications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detain License.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage Application Types.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Task Manage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newDriverLices_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renew Driver License_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Renew Driving License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Damaged Driving License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detained Driving License 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Retake Test 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Local.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\international.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Detain 32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Release Detained License 32.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
