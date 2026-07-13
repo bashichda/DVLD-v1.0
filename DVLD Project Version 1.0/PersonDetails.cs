@@ -64,7 +64,7 @@ namespace DVLD_Project_Version_1._0
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmAddEditPerson frm = new frmAddEditPerson((int)Convert.ToInt32(lblPersonID.Text));
+            frmEditUpdatePerson frm = new frmEditUpdatePerson((int)Convert.ToInt32(lblPersonID.Text));
             frm.ShowDialog();
 
             PersonUpdated?.Invoke(this, EventArgs.Empty);

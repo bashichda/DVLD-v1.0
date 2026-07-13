@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmAddEditPerson.cs">
+    <Compile Include="People\frmEditUpdatePerson.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAddEditPerson.Designer.cs">
-      <DependentUpon>frmAddEditPerson.cs</DependentUpon>
+    <Compile Include="People\frmEditUpdatePerson.Designer.cs">
+      <DependentUpon>frmEditUpdatePerson.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
@@ -90,8 +90,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmAddEditPerson.resx">
-      <DependentUpon>frmAddEditPerson.cs</DependentUpon>
+    <EmbeddedResource Include="People\frmEditUpdatePerson.resx">
+      <DependentUpon>frmEditUpdatePerson.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
