@@ -36,7 +36,7 @@ namespace DVLD_Project_Version_1._0
 
         private void _RefreshPeopleData()
         {
-            DataTable dt = clsPeople.GetAllPeopleInfoList();
+            DataTable dt = clsPerson.GetAllPeople();
             _dvPeople = new DataView(dt);
 
             dgvPeopleList.DataSource = _dvPeople;
@@ -151,13 +151,13 @@ namespace DVLD_Project_Version_1._0
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            clsPeople Person = clsPeople.Find((int)dgvPeopleList.CurrentRow.Cells[0].Value);
+            clsPerson Person = clsPerson.Find((int)dgvPeopleList.CurrentRow.Cells[0].Value);
             int PersonID = Person.PersonID;
             string ImgaePath = Person.ImagePath;
 
             if (MessageBox.Show($"Are You Sure You wanna Delete this Person [{PersonID}]?","Alert",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning) == DialogResult.OK)
             {
-                if (clsPeople.Delete(PersonID))
+                if (clsPerson.DeletePerson(PersonID))
                 {
                     MessageBox.Show($"Person With ID [{PersonID} Deleted Successfully.]", "Successfuly", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     File.Delete(Person.ImagePath);

@@ -15,7 +15,7 @@ namespace DVLD_Project_Version_1._0
     public partial class Person_Details : Form
     {
         private int _PersonID;
-        clsPeople _People;
+        clsPerson _People;
 
         public Person_Details(int PersonID)
         {
@@ -32,7 +32,7 @@ namespace DVLD_Project_Version_1._0
 
         private void _LoadData()
         {
-            _People = clsPeople.Find(_PersonID);
+            _People = clsPerson.Find(_PersonID);
 
             if (_People == null)
             {
@@ -49,7 +49,7 @@ namespace DVLD_Project_Version_1._0
             ctrlPersonDetails.Address = _People.Address;
             ctrlPersonDetails.DateOfBirth = _People.DateOfBirth.ToShortDateString();
             ctrlPersonDetails.Phone = _People.Phone;
-            ctrlPersonDetails.Country = clsCountries.FindCountryNameByID(_People.NationalCountryID);
+            ctrlPersonDetails.Country = _People.CountryInfo.CountryName;
             ctrlPersonDetails.ImagePath = _People.ImagePath;
             ctrlPersonDetails.RefreshData();
         }

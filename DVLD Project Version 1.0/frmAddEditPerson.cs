@@ -18,7 +18,7 @@ namespace DVLD_Project_Version_1._0
         private enMode _Mode = enMode.AddNew;
 
         int _PersonID;
-        clsPeople _People;
+        clsPerson _People;
 
         public frmAddEditPerson(int ID)
         {
@@ -36,7 +36,7 @@ namespace DVLD_Project_Version_1._0
         }
         private void _FillCountries()
         {
-            DataTable dt = clsCountries.GetAllCountries();
+            DataTable dt = clsCountry.GetAllCountries();
 
             cbCountries.DataSource = dt;
             cbCountries.DisplayMember = "CountryName";
@@ -53,13 +53,13 @@ namespace DVLD_Project_Version_1._0
             if (_Mode == enMode.AddNew)
             {
                 lblMode.Text = "Add New Person";
-                _People = new clsPeople();
+                _People = new clsPerson();
                 llRemoveImage.Visible = false;
                 rdMale.Checked = true;
                 return;
             }
 
-            _People = clsPeople.Find(_PersonID);
+            _People = clsPerson.Find(_PersonID);
 
             if (_People == null)
             {
@@ -257,7 +257,7 @@ namespace DVLD_Project_Version_1._0
 
         private void txtNationalNo_Validating(object sender, CancelEventArgs e)
         {
-            if (clsPeople.IsExistByNationalNo(txtNationalNo.Text))
+            if (clsPerson.isPersonExist(txtNationalNo.Text))
             {
                 errorProvider1.SetError(txtNationalNo, "National Number is used for another Person!");
             }

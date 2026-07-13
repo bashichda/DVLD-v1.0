@@ -3,48 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\frmpersondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\frmpersondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld project version 1.0\\frmmanageusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\frmmanageusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld-businesslayer\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|solutionrelative:dvld-businesslayer\\clsperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld project version 1.0\\frmmanageusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\frmmanageusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld project version 1.0\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld-businesslayer\\clsusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|solutionrelative:dvld-businesslayer\\clsusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld-dataaccesslayer\\clsusersdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|solutionrelative:dvld-dataaccesslayer\\clsusersdataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld project version 1.0\\frmmanagerpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\frmmanagerpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld project version 1.0\\frmmanagerpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\frmmanagerpeople.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld project version 1.0\\frmaddeditperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\frmaddeditperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld project version 1.0\\persondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\persondetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld project version 1.0\\frmaddeditperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\frmaddeditperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld-dataaccesslayer\\clscountrydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|solutionrelative:dvld-dataaccesslayer\\clscountrydata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -59,133 +27,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmMain.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\frmMain.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmMain.cs [Design]",
-              "RelativeToolTip": "DVLD Project Version 1.0\\frmMain.cs [Design]",
+              "Title": "frmPersonDetails.cs",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmPersonDetails.cs",
+              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\frmPersonDetails.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmPersonDetails.cs*",
+              "RelativeToolTip": "DVLD Project Version 1.0\\frmPersonDetails.cs*",
+              "ViewState": "AgIAACEAAAAAAAAAAAAwwDMAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-13T11:49:11.079Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmManageUsers.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmManageUsers.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\frmManageUsers.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmManageUsers.cs",
-              "RelativeToolTip": "DVLD Project Version 1.0\\frmManageUsers.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAlwCkAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T18:46:26.929Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmMain.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmMain.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\frmMain.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmMain.cs",
-              "RelativeToolTip": "DVLD Project Version 1.0\\frmMain.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAIAwwCEAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T18:45:26.114Z",
+              "WhenOpened": "2026-07-13T13:16:50.823Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmManageUsers.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmManageUsers.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\frmManageUsers.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmManageUsers.cs [Design]",
-              "RelativeToolTip": "DVLD Project Version 1.0\\frmManageUsers.cs [Design]",
+              "Title": "clsCountryData.cs",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsCountryData.cs",
+              "RelativeDocumentMoniker": "DVLD-DataAccessLayer\\clsCountryData.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsCountryData.cs",
+              "RelativeToolTip": "DVLD-DataAccessLayer\\clsCountryData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T18:26:37.782Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-07-13T13:01:08.47Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "clsUsers.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsUsers.cs",
-              "RelativeDocumentMoniker": "DVLD-BusinessLayer\\clsUsers.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsUsers.cs",
-              "RelativeToolTip": "DVLD-BusinessLayer\\clsUsers.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "clsPerson.cs",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsPerson.cs",
+              "RelativeDocumentMoniker": "DVLD-BusinessLayer\\clsPerson.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsPerson.cs",
+              "RelativeToolTip": "DVLD-BusinessLayer\\clsPerson.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAAwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T11:27:30.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "clsUsersDataAccess.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsUsersDataAccess.cs",
-              "RelativeDocumentMoniker": "DVLD-DataAccessLayer\\clsUsersDataAccess.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsUsersDataAccess.cs",
-              "RelativeToolTip": "DVLD-DataAccessLayer\\clsUsersDataAccess.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAIAwwEEAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-12T11:21:48.667Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PersonDetails.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\PersonDetails.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\PersonDetails.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\PersonDetails.cs [Design]",
-              "RelativeToolTip": "DVLD Project Version 1.0\\PersonDetails.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T19:13:51.269Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmAddEditPerson.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmAddEditPerson.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\frmAddEditPerson.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmAddEditPerson.cs",
-              "RelativeToolTip": "DVLD Project Version 1.0\\frmAddEditPerson.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJ8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T18:38:28.788Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmAddEditPerson.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmAddEditPerson.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\frmAddEditPerson.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmAddEditPerson.cs [Design]",
-              "RelativeToolTip": "DVLD Project Version 1.0\\frmAddEditPerson.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-11T09:14:57.169Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmManagerPeople.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmManagerPeople.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\frmManagerPeople.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmManagerPeople.cs",
-              "RelativeToolTip": "DVLD Project Version 1.0\\frmManagerPeople.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAIAwwD4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T18:22:13.467Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmManagerPeople.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmManagerPeople.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\frmManagerPeople.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\frmManagerPeople.cs [Design]",
-              "RelativeToolTip": "DVLD Project Version 1.0\\frmManagerPeople.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-10T12:39:17.289Z"
+              "WhenOpened": "2026-07-13T12:48:38.033Z",
+              "EditorCaption": ""
             }
           ]
         }
