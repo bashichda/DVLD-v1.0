@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DVLD_BusinessLayer;
+using DVLD_Project_Version_1._0.People;
 
 namespace DVLD_Project_Version_1._0
 {
@@ -135,7 +136,7 @@ namespace DVLD_Project_Version_1._0
 
         private void addNewPersonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAddUpdatePerson frm = new frmAddUpdatePerson(-1);
+            frmAddUpdatePerson frm = new frmAddUpdatePerson();
             frm.ShowDialog();
 
             _RefreshPeopleData();
@@ -177,7 +178,7 @@ namespace DVLD_Project_Version_1._0
 
         private void showDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Person_Details frm = new Person_Details((int)dgvPeopleList.CurrentRow.Cells[0].Value);
+            frmShowPersonInfo frm = new frmShowPersonInfo((int)dgvPeopleList.CurrentRow.Cells[0].Value);
             frm.ShowDialog();
 
             _RefreshPeopleData();
