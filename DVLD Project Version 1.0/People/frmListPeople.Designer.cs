@@ -1,6 +1,6 @@
 ﻿namespace DVLD_Project_Version_1._0
 {
-    partial class frmManagePeople
+    partial class frmListPeople
     {
         /// <summary>
         /// Required designer variable.
@@ -41,7 +41,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblRecordNumbers = new System.Windows.Forms.Label();
-            this.cbFilterByManagePeople = new System.Windows.Forms.ComboBox();
+            this.cbFilterBy = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.txtFilter = new System.Windows.Forms.TextBox();
             this.btnAddNewPeople = new System.Windows.Forms.Button();
@@ -57,14 +57,14 @@
             this.dgvPeopleList.AllowUserToAddRows = false;
             this.dgvPeopleList.AllowUserToDeleteRows = false;
             this.dgvPeopleList.AllowUserToOrderColumns = true;
-            this.dgvPeopleList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvPeopleList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgvPeopleList.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dgvPeopleList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPeopleList.ContextMenuStrip = this.contextMenuStrip1;
             this.dgvPeopleList.Location = new System.Drawing.Point(12, 245);
             this.dgvPeopleList.Name = "dgvPeopleList";
             this.dgvPeopleList.ReadOnly = true;
-            this.dgvPeopleList.Size = new System.Drawing.Size(1401, 350);
+            this.dgvPeopleList.Size = new System.Drawing.Size(1401, 410);
             this.dgvPeopleList.TabIndex = 0;
             // 
             // contextMenuStrip1
@@ -159,7 +159,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(12, 621);
+            this.label3.Location = new System.Drawing.Point(12, 673);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 20);
             this.label3.TabIndex = 5;
@@ -169,22 +169,33 @@
             // 
             this.lblRecordNumbers.AutoSize = true;
             this.lblRecordNumbers.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecordNumbers.Location = new System.Drawing.Point(128, 621);
+            this.lblRecordNumbers.Location = new System.Drawing.Point(128, 673);
             this.lblRecordNumbers.Name = "lblRecordNumbers";
             this.lblRecordNumbers.Size = new System.Drawing.Size(18, 20);
             this.lblRecordNumbers.TabIndex = 6;
             this.lblRecordNumbers.Text = "?";
             // 
-            // cbFilterByManagePeople
+            // cbFilterBy
             // 
-            this.cbFilterByManagePeople.BackColor = System.Drawing.SystemColors.Window;
-            this.cbFilterByManagePeople.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbFilterByManagePeople.FormattingEnabled = true;
-            this.cbFilterByManagePeople.Location = new System.Drawing.Point(98, 208);
-            this.cbFilterByManagePeople.Name = "cbFilterByManagePeople";
-            this.cbFilterByManagePeople.Size = new System.Drawing.Size(164, 28);
-            this.cbFilterByManagePeople.TabIndex = 7;
-            this.cbFilterByManagePeople.SelectedIndexChanged += new System.EventHandler(this.cbFilterByManagePeople_SelectedIndexChanged);
+            this.cbFilterBy.BackColor = System.Drawing.SystemColors.Window;
+            this.cbFilterBy.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbFilterBy.FormattingEnabled = true;
+            this.cbFilterBy.Items.AddRange(new object[] {
+            "None",
+            "Person ID",
+            "National No",
+            "First Name",
+            "Second Name",
+            "Third Name",
+            "Last Name",
+            "Email",
+            "Phone",
+            "Nationality"});
+            this.cbFilterBy.Location = new System.Drawing.Point(98, 208);
+            this.cbFilterBy.Name = "cbFilterBy";
+            this.cbFilterBy.Size = new System.Drawing.Size(164, 28);
+            this.cbFilterBy.TabIndex = 7;
+            this.cbFilterBy.SelectedIndexChanged += new System.EventHandler(this.cbFilterBy_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -201,6 +212,7 @@
             this.txtFilter.Size = new System.Drawing.Size(188, 26);
             this.txtFilter.TabIndex = 9;
             this.txtFilter.TextChanged += new System.EventHandler(this.txtFilter_TextChanged);
+            this.txtFilter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilter_KeyPress);
             // 
             // btnAddNewPeople
             // 
@@ -216,7 +228,7 @@
             // 
             this.btnClose.Image = global::DVLD_Project_Version_1._0.Properties.Resources.close;
             this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(1256, 609);
+            this.btnClose.Location = new System.Drawing.Point(1256, 661);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(157, 45);
             this.btnClose.TabIndex = 4;
@@ -234,14 +246,14 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // frmManagePeople
+            // frmListPeople
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1425, 666);
+            this.ClientSize = new System.Drawing.Size(1425, 718);
             this.Controls.Add(this.txtFilter);
             this.Controls.Add(this.btnAddNewPeople);
-            this.Controls.Add(this.cbFilterByManagePeople);
+            this.Controls.Add(this.cbFilterBy);
             this.Controls.Add(this.lblRecordNumbers);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnClose);
@@ -252,7 +264,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "frmManagePeople";
+            this.Name = "frmListPeople";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Manage People";
             this.Load += new System.EventHandler(this.frmManagePeople_Load);
@@ -273,7 +285,7 @@
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblRecordNumbers;
-        private System.Windows.Forms.ComboBox cbFilterByManagePeople;
+        private System.Windows.Forms.ComboBox cbFilterBy;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnAddNewPeople;
         private System.Windows.Forms.TextBox txtFilter;
