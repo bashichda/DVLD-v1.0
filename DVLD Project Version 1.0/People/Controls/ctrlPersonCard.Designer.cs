@@ -1,6 +1,6 @@
 ﻿namespace DVLD_Project_Version_1._0
 {
-    partial class PersonDetails
+    partial class ctrlPersonCard
     {
         /// <summary> 
         /// Required designer variable.
@@ -56,7 +56,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbPersonImage = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox122)).BeginInit();
@@ -67,7 +67,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -268,7 +268,7 @@
             this.LLEditPersonInfo.TabIndex = 19;
             this.LLEditPersonInfo.TabStop = true;
             this.LLEditPersonInfo.Text = "Edit Person Info";
-            this.LLEditPersonInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            this.LLEditPersonInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LLEditPersonInfo_LinkClicked);
             // 
             // pictureBox8
             // 
@@ -365,14 +365,15 @@
             this.pictureBox3.TabIndex = 76;
             this.pictureBox3.TabStop = false;
             // 
-            // pictureBox1
+            // pbPersonImage
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(655, 67);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 176);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
+            this.pbPersonImage.Image = global::DVLD_Project_Version_1._0.Properties.Resources.Man;
+            this.pbPersonImage.Location = new System.Drawing.Point(655, 67);
+            this.pbPersonImage.Name = "pbPersonImage";
+            this.pbPersonImage.Size = new System.Drawing.Size(188, 176);
+            this.pbPersonImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbPersonImage.TabIndex = 18;
+            this.pbPersonImage.TabStop = false;
             // 
             // groupBox1
             // 
@@ -385,7 +386,7 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Person Information";
             // 
-            // PersonDetails
+            // ctrlPersonCard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -399,7 +400,7 @@
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.LLEditPersonInfo);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pbPersonImage);
             this.Controls.Add(this.lblCountry);
             this.Controls.Add(this.lblPhone);
             this.Controls.Add(this.lblDate);
@@ -419,7 +420,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
-            this.Name = "PersonDetails";
+            this.Name = "ctrlPersonCard";
             this.Size = new System.Drawing.Size(883, 277);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox122)).EndInit();
@@ -430,7 +431,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPersonImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -456,7 +457,7 @@
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblPhone;
         private System.Windows.Forms.Label lblCountry;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pbPersonImage;
         private System.Windows.Forms.LinkLabel LLEditPersonInfo;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.PictureBox pictureBox2;

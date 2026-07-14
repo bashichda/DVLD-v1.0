@@ -15,14 +15,12 @@ namespace DVLD_Project_Version_1._0
     public partial class Person_Details : Form
     {
         private int _PersonID;
-        clsPerson _People;
+        clsPerson _Person;
 
         public Person_Details(int PersonID)
         {
             InitializeComponent();
             _PersonID = PersonID;
-
-            ctrlPersonDetails.PersonUpdated += CtrlPersonDetails_PersonUpdated;
         }
 
         private void CtrlPersonDetails_PersonUpdated(object sender, EventArgs e)
@@ -32,26 +30,16 @@ namespace DVLD_Project_Version_1._0
 
         private void _LoadData()
         {
-            _People = clsPerson.Find(_PersonID);
+            _Person = clsPerson.Find(_PersonID);
 
-            if (_People == null)
+            if (_Person == null)
             {
                 MessageBox.Show($"This Windows will close because there no Person With this ID {_PersonID}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Close();
                 return;
             }
 
-            ctrlPersonDetails.PersonID = _People.PersonID.ToString();
-            ctrlPersonDetails.FullName = _People.FirstName + " " + _People.SecondName + " " + _People.ThirdName + " " + _People.LastName;
-            ctrlPersonDetails.NationalNo = _People.NationalNo;
-            ctrlPersonDetails.Gender = _People.Gender == 0 ? "Male" : "Female";
-            ctrlPersonDetails.Email = _People.Email;
-            ctrlPersonDetails.Address = _People.Address;
-            ctrlPersonDetails.DateOfBirth = _People.DateOfBirth.ToShortDateString();
-            ctrlPersonDetails.Phone = _People.Phone;
-            ctrlPersonDetails.Country = _People.CountryInfo.CountryName;
-            ctrlPersonDetails.ImagePath = _People.ImagePath;
-            ctrlPersonDetails.RefreshData();
+            ctrlPersonDetails.LoadPersonInfo(_PersonID);
         }
 
         private void Person_Details_Load(object sender, EventArgs e)
