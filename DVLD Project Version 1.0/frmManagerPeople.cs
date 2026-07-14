@@ -28,7 +28,7 @@ namespace DVLD_Project_Version_1._0
 
         private void btnAddNewPeople_Click(object sender, EventArgs e)
         {
-            frmEditUpdatePerson frm = new frmEditUpdatePerson();
+            frmAddUpdatePerson frm = new frmAddUpdatePerson();
             frm.ShowDialog();
 
             _RefreshPeopleData();
@@ -135,7 +135,7 @@ namespace DVLD_Project_Version_1._0
 
         private void addNewPersonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmEditUpdatePerson frm = new frmEditUpdatePerson(-1);
+            frmAddUpdatePerson frm = new frmAddUpdatePerson(-1);
             frm.ShowDialog();
 
             _RefreshPeopleData();
@@ -143,7 +143,7 @@ namespace DVLD_Project_Version_1._0
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmEditUpdatePerson frm = new frmEditUpdatePerson((int)dgvPeopleList.CurrentRow.Cells[0].Value);
+            frmAddUpdatePerson frm = new frmAddUpdatePerson((int)dgvPeopleList.CurrentRow.Cells[0].Value);
             frm.ShowDialog();
 
             _RefreshPeopleData();

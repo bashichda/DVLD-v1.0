@@ -166,9 +166,9 @@
             this.lblPersonID.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPersonID.Location = new System.Drawing.Point(164, 28);
             this.lblPersonID.Name = "lblPersonID";
-            this.lblPersonID.Size = new System.Drawing.Size(36, 20);
+            this.lblPersonID.Size = new System.Drawing.Size(44, 20);
             this.lblPersonID.TabIndex = 9;
-            this.lblPersonID.Text = "???";
+            this.lblPersonID.Text = "[???]";
             // 
             // lblName
             // 
@@ -177,9 +177,9 @@
             this.lblName.ForeColor = System.Drawing.Color.Maroon;
             this.lblName.Location = new System.Drawing.Point(164, 67);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(39, 20);
+            this.lblName.Size = new System.Drawing.Size(49, 20);
             this.lblName.TabIndex = 10;
-            this.lblName.Text = "???";
+            this.lblName.Text = "[???]";
             // 
             // lblNationalNo
             // 
@@ -188,9 +188,9 @@
             this.lblNationalNo.ForeColor = System.Drawing.Color.Black;
             this.lblNationalNo.Location = new System.Drawing.Point(164, 106);
             this.lblNationalNo.Name = "lblNationalNo";
-            this.lblNationalNo.Size = new System.Drawing.Size(36, 20);
+            this.lblNationalNo.Size = new System.Drawing.Size(44, 20);
             this.lblNationalNo.TabIndex = 11;
-            this.lblNationalNo.Text = "???";
+            this.lblNationalNo.Text = "[???]";
             // 
             // lblGendor
             // 
@@ -199,9 +199,9 @@
             this.lblGendor.ForeColor = System.Drawing.Color.Black;
             this.lblGendor.Location = new System.Drawing.Point(164, 145);
             this.lblGendor.Name = "lblGendor";
-            this.lblGendor.Size = new System.Drawing.Size(36, 20);
+            this.lblGendor.Size = new System.Drawing.Size(44, 20);
             this.lblGendor.TabIndex = 12;
-            this.lblGendor.Text = "???";
+            this.lblGendor.Text = "[???]";
             // 
             // lblEmail
             // 
@@ -210,9 +210,9 @@
             this.lblEmail.ForeColor = System.Drawing.Color.Black;
             this.lblEmail.Location = new System.Drawing.Point(164, 184);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(36, 20);
+            this.lblEmail.Size = new System.Drawing.Size(44, 20);
             this.lblEmail.TabIndex = 13;
-            this.lblEmail.Text = "???";
+            this.lblEmail.Text = "[???]";
             // 
             // lblAddress
             // 
@@ -221,9 +221,9 @@
             this.lblAddress.ForeColor = System.Drawing.Color.Black;
             this.lblAddress.Location = new System.Drawing.Point(164, 223);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(36, 20);
+            this.lblAddress.Size = new System.Drawing.Size(44, 20);
             this.lblAddress.TabIndex = 14;
-            this.lblAddress.Text = "???";
+            this.lblAddress.Text = "[???]";
             // 
             // lblDate
             // 
@@ -232,9 +232,9 @@
             this.lblDate.ForeColor = System.Drawing.Color.Black;
             this.lblDate.Location = new System.Drawing.Point(551, 106);
             this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(36, 20);
+            this.lblDate.Size = new System.Drawing.Size(44, 20);
             this.lblDate.TabIndex = 15;
-            this.lblDate.Text = "???";
+            this.lblDate.Text = "[???]";
             // 
             // lblPhone
             // 
@@ -243,9 +243,9 @@
             this.lblPhone.ForeColor = System.Drawing.Color.Black;
             this.lblPhone.Location = new System.Drawing.Point(551, 145);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(36, 20);
+            this.lblPhone.Size = new System.Drawing.Size(44, 20);
             this.lblPhone.TabIndex = 16;
-            this.lblPhone.Text = "???";
+            this.lblPhone.Text = "[???]";
             // 
             // lblCountry
             // 
@@ -254,9 +254,9 @@
             this.lblCountry.ForeColor = System.Drawing.Color.Black;
             this.lblCountry.Location = new System.Drawing.Point(551, 184);
             this.lblCountry.Name = "lblCountry";
-            this.lblCountry.Size = new System.Drawing.Size(36, 20);
+            this.lblCountry.Size = new System.Drawing.Size(44, 20);
             this.lblCountry.TabIndex = 17;
-            this.lblCountry.Text = "???";
+            this.lblCountry.Text = "[???]";
             // 
             // LLEditPersonInfo
             // 

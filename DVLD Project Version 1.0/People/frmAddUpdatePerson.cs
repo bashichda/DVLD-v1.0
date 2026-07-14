@@ -15,7 +15,7 @@ using DVLD_Project_Version_1._0.Properties;
 
 namespace DVLD_Project_Version_1._0
 {
-    public partial class frmEditUpdatePerson : Form
+    public partial class frmAddUpdatePerson : Form
     {
         //Decaler a Delegate:
         public delegate void DataBackEventHandler(object sender, int PersonID);
@@ -31,13 +31,13 @@ namespace DVLD_Project_Version_1._0
         private int _PersonID = -1;
         clsPerson _Person;
 
-        public frmEditUpdatePerson()
+        public frmAddUpdatePerson()
         {
             InitializeComponent();
             _Mode = enMode.AddNew;
         }
 
-        public frmEditUpdatePerson(int PersonID)
+        public frmAddUpdatePerson(int PersonID)
         {
             InitializeComponent();
             _PersonID = PersonID;

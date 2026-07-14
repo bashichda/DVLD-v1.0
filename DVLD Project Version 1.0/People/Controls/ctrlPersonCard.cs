@@ -107,7 +107,7 @@ namespace DVLD_Project_Version_1._0
 
         private void LLEditPersonInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            frmEditUpdatePerson frm = new frmEditUpdatePerson(_PersonID);
+            frmAddUpdatePerson frm = new frmAddUpdatePerson(_PersonID);
             frm.ShowDialog();
 
             //Refresh

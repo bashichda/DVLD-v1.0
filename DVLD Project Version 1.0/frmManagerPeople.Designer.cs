@@ -191,7 +191,6 @@
             // 
             // addNewPersonToolStripMenuItem
             // 
-            this.addNewPersonToolStripMenuItem.Image = global::DVLD_Project_Version_1._0.Properties.Resources.Add_Person;
             this.addNewPersonToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.addNewPersonToolStripMenuItem.Name = "addNewPersonToolStripMenuItem";
             this.addNewPersonToolStripMenuItem.Size = new System.Drawing.Size(211, 38);

@@ -533,6 +533,16 @@ namespace DVLD_Project_Version_1._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Search_Person {
+            get {
+                object obj = ResourceManager.GetObject("Search Person", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Send_Email {
             get {
                 object obj = ResourceManager.GetObject("Send Email", resourceCulture);
