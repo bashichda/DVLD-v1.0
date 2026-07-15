@@ -606,7 +606,7 @@
             this.label13.TabIndex = 77;
             this.label13.Text = "Name:";
             // 
-            // frmEditUpdatePerson
+            // frmAddUpdatePerson
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -619,7 +619,7 @@
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "frmEditUpdatePerson";
+            this.Name = "frmAddUpdatePerson";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add / Edit Person Info";
             this.Load += new System.EventHandler(this.frmEditUpdatePerson_Load);

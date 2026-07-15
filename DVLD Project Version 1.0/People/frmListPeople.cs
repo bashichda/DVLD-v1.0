@@ -93,6 +93,8 @@ namespace DVLD_Project_Version_1._0
 
             frmShowPersonInfo frm = new frmShowPersonInfo(PersonID);
             frm.ShowDialog();
+
+            _RefreshPeopleList();
         }
 
         private void editToolStripMenuItem_Click(object sender, EventArgs e)

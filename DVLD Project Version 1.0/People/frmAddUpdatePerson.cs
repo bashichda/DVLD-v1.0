@@ -261,7 +261,7 @@ namespace DVLD_Project_Version_1._0
 
             if (string.IsNullOrEmpty(Temp.Text.Trim()))
             {
-                //e.Cancel = true;
+                e.Cancel = true;
                 errorProvider1.SetError(Temp, "This field is required!");
             }
             else
@@ -278,7 +278,7 @@ namespace DVLD_Project_Version_1._0
             // Validate email Format:
             if (!clsValidation.ValidateEmail(txtEmail.Text))
             {
-                //e.Cancel = true;
+                e.Cancel = true;
                 errorProvider1.SetError(txtEmail, "Invalid Email Address Format!");
             }
             else
@@ -291,7 +291,7 @@ namespace DVLD_Project_Version_1._0
         {
             if (string.IsNullOrEmpty(txtNationalNo.Text.Trim()))
             {
-                //e.Cancel = true;
+                e.Cancel = true;
                 errorProvider1.SetError(txtNationalNo, "This field is required!");
                 return;
             }
@@ -303,7 +303,7 @@ namespace DVLD_Project_Version_1._0
             // Make sure the natinal No is not used for anther person:
             if (txtNationalNo.Text.Trim() != _Person.NationalNo && clsPerson.isPersonExist(txtNationalNo.Text))
             {
-                //e.Cancel = true;
+                e.Cancel = true;
                 errorProvider1.SetError(txtNationalNo, "National Number is Already used for another Person.");
             }
             else
@@ -362,5 +362,7 @@ namespace DVLD_Project_Version_1._0
         {
             this.Close();
         }
+
+        
     }
 }

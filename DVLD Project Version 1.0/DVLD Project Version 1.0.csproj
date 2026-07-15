@@ -78,10 +78,10 @@
     <Compile Include="People\frmListPeople.Designer.cs">
       <DependentUpon>frmListPeople.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmManageUsers.cs">
+    <Compile Include="Users\frmManageUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmManageUsers.Designer.cs">
+    <Compile Include="Users\frmManageUsers.Designer.cs">
       <DependentUpon>frmManageUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="People\Controls\ctrlPersonCard.cs">
@@ -119,7 +119,7 @@
     <EmbeddedResource Include="People\frmListPeople.resx">
       <DependentUpon>frmListPeople.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmManageUsers.resx">
+    <EmbeddedResource Include="Users\frmManageUsers.resx">
       <DependentUpon>frmManageUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="People\Controls\ctrlPersonCard.resx">

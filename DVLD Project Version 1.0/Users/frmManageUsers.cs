@@ -13,7 +13,7 @@ namespace DVLD_Project_Version_1._0
 {
     public partial class frmManageUsers : Form
     {
-        DataTable _dtUsers = clsUsers.GetAllUsersInfo();
+        DataTable _dtUsers = clsUser.GetAllUsersInfo();
 
         public frmManageUsers()
         {

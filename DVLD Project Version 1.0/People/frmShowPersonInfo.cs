@@ -28,5 +28,6 @@ namespace DVLD_Project_Version_1._0.People
         {
             this.Close();
         }
+
     }
 }
