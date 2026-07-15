@@ -1,4 +1,5 @@
 ﻿using DVLD_BusinessLayer;
+using DVLD_Project_Version_1._0.Users;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -39,6 +40,10 @@ namespace DVLD_Project_Version_1._0
             _RefreshDataUsers();
         }
 
-        
+        private void btnAddUser_Click(object sender, EventArgs e)
+        {
+            frmAddUpdateUser frm = new frmAddUpdateUser();
+            frm.ShowDialog();
+        }
     }
 }

@@ -85,7 +85,7 @@ namespace DVLD_DataAccessLayer
                 {
                     isfound = true;
 
-                    PersonID = (int)reader["PesronID"];
+                    PersonID = (int)reader["PersonID"];
                     FirstName = (string)reader["FirstName"];
                     SecondName = reader["SecondName"] != DBNull.Value ? (string)reader["SecondName"] : "";
                     ThirdName = reader["ThirdName"] != DBNull.Value ? (string)reader["ThirdName"] : "";

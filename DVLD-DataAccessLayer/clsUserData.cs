@@ -102,7 +102,7 @@ namespace DVLD_DataAccessLayer
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
 
-            string query = @"Select * From Users Where UserName = @UserID And Password = @Password;";
+            string query = @"Select * From Users Where UserName = @UserName And Password = @Password;";
 
             SqlCommand command = new SqlCommand(query, connection);
 
@@ -223,10 +223,13 @@ namespace DVLD_DataAccessLayer
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
 
             string query = @"Select Users.UserID,Users.PersonID,
-                            FullName = People.FirstName + ' ' + People.SecondName + ' ' + People.ThirdName + ' ' + People.LastName,
-                            Users.UserName,Users.IsActive
-                            From Users Inner Join
-                                        People On Users.PersonID = People.PersonID;";
+                            CONCAT_WS(' ', People.FirstName, 
+                                    People.SecondName, 
+                                    People.ThirdName, 
+                                    People.LastName) as FullName,
+                                    Users.UserName,Users.IsActive
+                                    From Users Inner Join
+                                               People On Users.PersonID = People.PersonID;";
 
             SqlCommand command = new SqlCommand(query, connection);
 

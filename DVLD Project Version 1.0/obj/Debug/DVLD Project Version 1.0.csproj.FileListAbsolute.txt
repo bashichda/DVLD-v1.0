@@ -22,3 +22,4 @@ C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.People.frmFindPerson.resources
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.People.frmShowPersonInfo.resources
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.frmListPeople.resources
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Users.frmAddUpdateUser.resources

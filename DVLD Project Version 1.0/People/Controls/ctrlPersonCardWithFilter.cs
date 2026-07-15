@@ -67,7 +67,7 @@ namespace DVLD_Project_Version_1._0.People.Controls
         {
             get
             {
-                return _PersonID;
+                return ctrlPersonCard1.PersonID;
             }
         }
 
