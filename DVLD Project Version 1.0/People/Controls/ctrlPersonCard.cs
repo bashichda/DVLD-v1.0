@@ -89,7 +89,7 @@ namespace DVLD_Project_Version_1._0
             _LoadPersonImage();
         }
 
-        private void _ResetPersonInfo()
+        public void ResetPersonInfo()
         {
             _PersonID = -1;
             lblPersonID.Text = "[???]";

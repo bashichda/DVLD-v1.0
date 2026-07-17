@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld project version 1.0\\users\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\users\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\users\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\users\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld project version 1.0\\users\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\users\\frmaddupdateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -28,9 +28,9 @@
               "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Users\\frmAddUpdateUser.cs",
               "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\frmAddUpdateUser.cs",
               "RelativeToolTip": "DVLD Project Version 1.0\\Users\\frmAddUpdateUser.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAmwDQAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T14:43:31.131Z",
+              "WhenOpened": "2026-07-15T18:45:27.526Z",
               "EditorCaption": ""
             },
             {
@@ -42,8 +42,7 @@
               "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\frmAddUpdateUser.cs [Design]",
               "RelativeToolTip": "DVLD Project Version 1.0\\Users\\frmAddUpdateUser.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-15T13:42:14.035Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2026-07-15T18:45:21.365Z"
             }
           ]
         }
