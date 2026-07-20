@@ -44,6 +44,16 @@ namespace DVLD_Project_Version_1._0
         {
             frmAddUpdateUser frm = new frmAddUpdateUser();
             frm.ShowDialog();
+
+            _RefreshDataUsers();
+        }
+
+        private void showToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmUserInfo frm = new frmUserInfo((int)dgvUsersList.CurrentRow.Cells[0].Value);
+            frm.ShowDialog();
+
+            _RefreshDataUsers();
         }
     }
 }

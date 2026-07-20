@@ -83,7 +83,7 @@
             this.sendEmailToolStripMenuItem,
             this.phoneCallToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(220, 276);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(220, 298);
             // 
             // showToolStripMenuItem
             // 
@@ -93,6 +93,7 @@
             this.showToolStripMenuItem.Name = "showToolStripMenuItem";
             this.showToolStripMenuItem.Size = new System.Drawing.Size(219, 38);
             this.showToolStripMenuItem.Text = "Show Details";
+            this.showToolStripMenuItem.Click += new System.EventHandler(this.showToolStripMenuItem_Click);
             // 
             // addNewUserToolStripMenuItem
             // 

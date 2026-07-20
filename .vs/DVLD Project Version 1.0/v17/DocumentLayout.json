@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\users\\ctrlusercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\users\\ctrlusercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\users\\frmmanageusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\users\\frmmanageusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\users\\ctrlusercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\users\\ctrlusercard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\users\\frmmanageusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\users\\frmmanageusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\users\\frmuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\users\\frmuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\users\\frmuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\users\\frmuserinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ctrlUserCard.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\ctrlUserCard.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Users\\ctrlUserCard.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\ctrlUserCard.cs",
-              "RelativeToolTip": "DVLD Project Version 1.0\\Users\\ctrlUserCard.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAA5AAAAAAAAAA==",
+              "Title": "frmManageUsers.cs",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\frmManageUsers.cs",
+              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Users\\frmManageUsers.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\frmManageUsers.cs",
+              "RelativeToolTip": "DVLD Project Version 1.0\\Users\\frmManageUsers.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAmwDcAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T11:35:03.935Z",
+              "WhenOpened": "2026-07-20T15:17:33.056Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ctrlUserCard.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\ctrlUserCard.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Users\\ctrlUserCard.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\ctrlUserCard.cs [Design]",
-              "RelativeToolTip": "DVLD Project Version 1.0\\Users\\ctrlUserCard.cs [Design]",
+              "Title": "frmManageUsers.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\frmManageUsers.cs",
+              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Users\\frmManageUsers.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\frmManageUsers.cs [Design]",
+              "RelativeToolTip": "DVLD Project Version 1.0\\Users\\frmManageUsers.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-17T11:29:25.652Z",
+              "WhenOpened": "2026-07-20T15:17:20.572Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmUserInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\frmUserInfo.cs",
+              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Users\\frmUserInfo.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\frmUserInfo.cs",
+              "RelativeToolTip": "DVLD Project Version 1.0\\Users\\frmUserInfo.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwB0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T15:16:18.041Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmUserInfo.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\frmUserInfo.cs",
+              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Users\\frmUserInfo.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Users\\frmUserInfo.cs [Design]",
+              "RelativeToolTip": "DVLD Project Version 1.0\\Users\\frmUserInfo.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-20T15:12:44.804Z",
               "EditorCaption": " [Design]"
             }
           ]

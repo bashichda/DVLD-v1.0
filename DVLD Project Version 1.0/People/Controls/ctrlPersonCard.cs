@@ -33,7 +33,7 @@ namespace DVLD_Project_Version_1._0
 
             if (_Person == null)
             {
-                _ResetPersonInfo();
+                ResetPersonInfo();
                 MessageBox.Show("No Person with PersonID = " + PersonID.ToString(), "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
@@ -47,7 +47,7 @@ namespace DVLD_Project_Version_1._0
 
             if (_Person == null)
             {
-                _ResetPersonInfo();
+                ResetPersonInfo();
                 MessageBox.Show("No Person with NationalNo = " + NationalNo, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }

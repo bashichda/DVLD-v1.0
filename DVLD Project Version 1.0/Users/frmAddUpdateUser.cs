@@ -139,16 +139,7 @@ namespace DVLD_Project_Version_1._0.Users
 
         private void txtConfirmPassword_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrEmpty(txtConfirmPassword.Text))
-            {
-                e.Cancel = true;
-                errorProvider1.SetError(txtConfirmPassword, "Password Cannot be blank");
-            }
-            else
-            {
-                errorProvider1.SetError(txtConfirmPassword, null);
-            }
-
+           
             if (txtConfirmPassword.Text != txtPassword.Text)
             {
                 e.Cancel = true;
@@ -231,6 +222,11 @@ namespace DVLD_Project_Version_1._0.Users
             }
             else
                 MessageBox.Show("User is not saved Successfully.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void frmAddUpdateUser_Activated(object sender, EventArgs e)
+        {
+            ctrlPersonCardWithFilter1.FilterFocus();
         }
     }
 }
