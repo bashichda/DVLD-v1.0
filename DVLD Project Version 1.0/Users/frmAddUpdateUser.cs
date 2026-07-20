@@ -115,25 +115,43 @@ namespace DVLD_Project_Version_1._0.Users
 
         private void txtUserName_Validating(object sender, CancelEventArgs e)
         {
-            
+
             if (string.IsNullOrEmpty(txtUserName.Text))
             {
                 e.Cancel = true;
-                errorProvider1.SetError(txtUserName, "This field is required!");
+                errorProvider1.SetError(txtUserName, "This Field is Required!");
             }
             else
             {
                 errorProvider1.SetError(txtUserName, null);
             }
 
-            if (clsUser.isUserExist(txtUserName.Text))
+            if (_Mode == enMode.AddNew)
             {
-                e.Cancel = true;
-                errorProvider1.SetError(txtUserName, "This User Name is already used choose another one!");
+                if (clsUser.isUserExist(txtUserName.Text.Trim()))
+                {
+                    e.Cancel = true;
+                    errorProvider1.SetError(txtUserName, "This UserName Already Used, Choose Another One.");
+                }
+                else
+                {
+                    errorProvider1.SetError(txtUserName, null);
+                }
             }
             else
             {
-                errorProvider1.SetError(txtUserName, null);
+                if (_User.UserName != txtUserName.Text.Trim())
+                {
+                    if (clsUser.isUserExist(txtUserName.Text))
+                    {
+                        e.Cancel = true;
+                        errorProvider1.SetError(txtUserName, "This UserName Already Used, Choose Another One.");
+                    }
+                    else
+                    {
+                        errorProvider1.SetError(txtUserName, null);
+                    }
+                }
             }
         }
 
