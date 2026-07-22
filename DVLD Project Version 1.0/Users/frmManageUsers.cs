@@ -1,4 +1,5 @@
 ﻿using DVLD_BusinessLayer;
+using DVLD_Project_Version_1._0.Global_Classes;
 using DVLD_Project_Version_1._0.People;
 using DVLD_Project_Version_1._0.Users;
 using System;
@@ -189,6 +190,12 @@ namespace DVLD_Project_Version_1._0
         private void changePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             int UserID = (int)dgvUsersList.CurrentRow.Cells[0].Value;
+
+            if (UserID == clsGlobal.CurrentUser.UserID)
+            {
+                MessageBox.Show("You Cannot Delete Current User", "Delete Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+                return;
+            }
 
             if (MessageBox.Show($"Are Your sure you wanna Delete User ID {UserID}","Confirmation",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning)
                 == DialogResult.OK)

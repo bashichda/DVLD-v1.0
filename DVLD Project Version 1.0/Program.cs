@@ -17,12 +17,7 @@ namespace DVLD_Project_Version_1._0
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            frmLogin Login = new frmLogin();
-
-            if (Login.ShowDialog() == DialogResult.OK)
-            {
-                Application.Run(new frmMain());
-            }
+            Application.Run(new frmLogin());
         }
     }
 }

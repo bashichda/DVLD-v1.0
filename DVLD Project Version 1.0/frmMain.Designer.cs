@@ -306,6 +306,7 @@
             this.currentToolStripMenuItem.Name = "currentToolStripMenuItem";
             this.currentToolStripMenuItem.Size = new System.Drawing.Size(259, 38);
             this.currentToolStripMenuItem.Text = "Current User Info";
+            this.currentToolStripMenuItem.Click += new System.EventHandler(this.currentToolStripMenuItem_Click);
             // 
             // chnagePasswordToolStripMenuItem
             // 
@@ -315,6 +316,7 @@
             this.chnagePasswordToolStripMenuItem.Name = "chnagePasswordToolStripMenuItem";
             this.chnagePasswordToolStripMenuItem.Size = new System.Drawing.Size(259, 38);
             this.chnagePasswordToolStripMenuItem.Text = "Chnage Password";
+            this.chnagePasswordToolStripMenuItem.Click += new System.EventHandler(this.chnagePasswordToolStripMenuItem_Click);
             // 
             // sginOutToolStripMenuItem
             // 
