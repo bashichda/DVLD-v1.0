@@ -293,6 +293,16 @@ namespace DVLD_Project_Version_1._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fees {
+            get {
+                object obj = ResourceManager.GetObject("fees", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap female {
             get {
                 object obj = ResourceManager.GetObject("female", resourceCulture);
@@ -366,6 +376,16 @@ namespace DVLD_Project_Version_1._0.Properties {
         internal static System.Drawing.Bitmap Manage_Application_Types {
             get {
                 object obj = ResourceManager.GetObject("Manage Application Types", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap manage_Types__512 {
+            get {
+                object obj = ResourceManager.GetObject("manage Types _512", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -616,6 +636,16 @@ namespace DVLD_Project_Version_1._0.Properties {
         internal static System.Drawing.Bitmap Task_Manage {
             get {
                 object obj = ResourceManager.GetObject("Task Manage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Title {
+            get {
+                object obj = ResourceManager.GetObject("Title", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

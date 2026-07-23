@@ -212,5 +212,12 @@ namespace DVLD_Project_Version_1._0
 
             frmManageUsers_Load(null, null);
         }
+
+        private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //we allow number incase person id is selected.
+            if (cbFilterBy.Text == "Person ID" || cbFilterBy.Text == "User ID")
+                e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+        }
     }
 }

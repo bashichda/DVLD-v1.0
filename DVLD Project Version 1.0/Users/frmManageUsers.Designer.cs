@@ -83,7 +83,7 @@
             this.sendEmailToolStripMenuItem,
             this.phoneCallToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(220, 298);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(220, 276);
             // 
             // showToolStripMenuItem
             // 
@@ -286,6 +286,7 @@
             this.txtFilterValue.TabIndex = 10;
             this.txtFilterValue.Visible = false;
             this.txtFilterValue.TextChanged += new System.EventHandler(this.txtFilterValue_TextChanged);
+            this.txtFilterValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilterValue_KeyPress);
             // 
             // frmManageUsers
             // 

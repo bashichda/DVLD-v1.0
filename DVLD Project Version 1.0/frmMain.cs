@@ -1,4 +1,5 @@
-﻿using DVLD_Project_Version_1._0.Global_Classes;
+﻿using DVLD_Project_Version_1._0.Application_Types;
+using DVLD_Project_Version_1._0.Global_Classes;
 using DVLD_Project_Version_1._0.Users;
 using System;
 using System.Collections.Generic;
@@ -51,6 +52,12 @@ namespace DVLD_Project_Version_1._0
         private void chnagePasswordToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmChangePassword frm = new frmChangePassword(clsGlobal.CurrentUser.UserID);
+            frm.ShowDialog();
+        }
+
+        private void manageApplicationsTypesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmApplicationTypes frm = new frmApplicationTypes();
             frm.ShowDialog();
         }
     }
