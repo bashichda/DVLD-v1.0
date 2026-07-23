@@ -13,7 +13,7 @@ namespace DVLD_Project_Version_1._0.Application_Types
 {
     public partial class frmUpdateApplicationType : Form
     {
-        private int _ApplicationTypeID;
+        private int _ApplicationTypeID = -1;
         private clsApplicationTypes _ApplicationType;
 
         public frmUpdateApplicationType(int ApplicationTypeID)

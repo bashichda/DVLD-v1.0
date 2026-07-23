@@ -108,6 +108,7 @@ namespace DVLD_DataAccessLayer
             catch (Exception ex)
             {
                 System.Diagnostics.Debug.WriteLine(ex.Message);
+                isFound = false;
             }
             finally
             {
