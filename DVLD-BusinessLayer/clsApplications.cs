@@ -18,6 +18,7 @@ namespace DVLD_BusinessLayer
 
         public int ApplicationID { get; set; }
         public int ApplicantPersonID { get; set; }
+        public clsPerson PersonInfo;
         public string ApplicantFullName
         {
             get { return clsPerson.Find(ApplicantPersonID).FullName; }
@@ -65,6 +66,7 @@ namespace DVLD_BusinessLayer
         {
             this.ApplicationID = ApplicationID;
             this.ApplicantPersonID = ApplicantPersonID;
+            this.PersonInfo = clsPerson.Find(ApplicantPersonID);
             this.ApplicationDate = ApplicationDate;
             this.ApplicationTypeID = ApplicationTypeID;
             this.ApplicationTypeInfo = clsApplicationTypes.Find(ApplicationTypeID);
