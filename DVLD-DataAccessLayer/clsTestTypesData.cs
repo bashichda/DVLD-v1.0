@@ -123,5 +123,50 @@ namespace DVLD_DataAccessLayer
 
             return (rowsAffected > 0);
         }
+
+        public static int AddNewTestType(string Title, string Description, decimal Fees)
+        {
+            int TestTypeID = -1;
+
+            SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
+
+            string query = @"Insert Into TestTypes (TestTypeTitle,TestTypeTitle,TestTypeFees)
+                            Values (@TestTypeTitle,@TestTypeDescription,@ApplicationFees)
+                            where TestTypeID = @TestTypeID;
+                            SELECT SCOPE_IDENTITY();";
+
+            SqlCommand command = new SqlCommand(query, connection);
+
+            command.Parameters.AddWithValue("@TestTypeTitle", Title);
+            command.Parameters.AddWithValue("@TestTypeDescription", Description);
+            command.Parameters.AddWithValue("@ApplicationFees", Fees);
+
+            try
+            {
+                connection.Open();
+
+                object result = command.ExecuteScalar();
+
+                if (result != null && int.TryParse(result.ToString(), out int insertedID))
+                {
+                    TestTypeID = insertedID;
+                }
+            }
+
+            catch (Exception ex)
+            {
+                //Console.WriteLine("Error: " + ex.Message);
+
+            }
+
+            finally
+            {
+                connection.Close();
+            }
+
+
+            return TestTypeID;
+
+        }
     }
 }

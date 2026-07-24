@@ -10,23 +10,25 @@ namespace DVLD_BusinessLayer
     public class clsTestTypes
     {
         public enum enMode { AddNew = 0,Update =1};
-
         public enMode Mode = enMode.AddNew;
-        public int ID { get; set; }
+
+        public enum enTestType { Visiontest = 1,WrittenTest = 2,StreetTest = 3};
+
+        public clsTestTypes.enTestType ID { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public decimal Fees { get; set; }
 
         public clsTestTypes()
         {
-            ID = -1;
-            Title = "";
-            Description = "";
-            Fees = 0;
+            this.ID = clsTestTypes.enTestType.Visiontest;
+            this.Title = "";
+            this.Description = "";
+            this.Fees = 0;
             Mode = enMode.AddNew;
         }
 
-        private clsTestTypes(int ID,string Title,string Description,decimal Fees)
+        private clsTestTypes(clsTestTypes.enTestType ID,string Title,string Description,decimal Fees)
         {
             this.ID = ID;
             this.Title = Title;
@@ -40,12 +42,12 @@ namespace DVLD_BusinessLayer
             return clsTestTypesData.GetAllTestTypes();
         }
 
-        public static clsTestTypes Find(int ID)
+        public static clsTestTypes Find(clsTestTypes.enTestType ID)
         {
             string Title = "", Description = "";
             decimal Fees = 0;
 
-            bool isFound = clsTestTypesData.GetTestTypeInfoByID(ID, ref Title, ref Description, ref Fees);
+            bool isFound = clsTestTypesData.GetTestTypeInfoByID((int)ID, ref Title, ref Description, ref Fees);
 
             if (isFound)
             {
@@ -59,13 +61,16 @@ namespace DVLD_BusinessLayer
 
         private bool _AddNewTestType()
         {
-            //Code here 
-            return false;
+            //call DataAccess Layer 
+
+            this.ID =(clsTestTypes.enTestType) clsTestTypesData.AddNewTestType(this.Title,this.Description, this.Fees);
+              
+            return (this.Title !="");
         }
 
         private bool _UpdateTestTyep()
         {
-            return clsTestTypesData.UpdateTestType(this.ID, this.Title, this.Description, this.Fees);
+            return clsTestTypesData.UpdateTestType((int)this.ID, this.Title, this.Description, this.Fees);
         }
 
         public bool Save()

@@ -14,10 +14,11 @@ namespace DVLD_Project_Version_1._0.Test_Types
 {
     public partial class frmEditTestTypes : Form
     {
-        private int _TestTypeID = -1;
+        private clsTestTypes.enTestType _TestTypeID = clsTestTypes.enTestType.Visiontest;
+
         private clsTestTypes _TestType;
 
-        public frmEditTestTypes(int TestTypeID)
+        public frmEditTestTypes(clsTestTypes.enTestType TestTypeID)
         {
             InitializeComponent();
             _TestTypeID = TestTypeID;
@@ -34,7 +35,7 @@ namespace DVLD_Project_Version_1._0.Test_Types
                 return;
             }
 
-            lblID.Text = _TestType.ID.ToString();
+            lblID.Text = ((int)_TestType.ID).ToString();
             txtTitle.Text = _TestType.Title;
             txtDescription.Text = _TestType.Description;
             txtFees.Text = _TestType.Fees.ToString();

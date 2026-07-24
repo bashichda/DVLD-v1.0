@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\test types\\frmedittesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\test types\\frmedittesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld-businesslayer\\clsapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|solutionrelative:dvld-businesslayer\\clsapplications.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\test types\\frmlisttesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\test types\\frmlisttesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld-dataaccesslayer\\clstesttypesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|solutionrelative:dvld-dataaccesslayer\\clstesttypesdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\test types\\frmedittesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\test types\\frmedittesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\test types\\frmlisttesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\test types\\frmlisttesttypes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld-dataaccesslayer\\clsapplicationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|solutionrelative:dvld-dataaccesslayer\\clsapplicationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,70 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "clsTestTypesData.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsTestTypesData.cs",
-              "RelativeDocumentMoniker": "DVLD-DataAccessLayer\\clsTestTypesData.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsTestTypesData.cs",
-              "RelativeToolTip": "DVLD-DataAccessLayer\\clsTestTypesData.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAnwEwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T17:38:32.522Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmEditTestTypes.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Test Types\\frmEditTestTypes.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Test Types\\frmEditTestTypes.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Test Types\\frmEditTestTypes.cs",
-              "RelativeToolTip": "DVLD Project Version 1.0\\Test Types\\frmEditTestTypes.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAnwGsAAABCAAAAAAAAAA==",
+              "Title": "clsApplications.cs",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsApplications.cs",
+              "RelativeDocumentMoniker": "DVLD-BusinessLayer\\clsApplications.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsApplications.cs",
+              "RelativeToolTip": "DVLD-BusinessLayer\\clsApplications.cs",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAiwLsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T17:22:02.264Z",
+              "WhenOpened": "2026-07-24T18:26:03.032Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmEditTestTypes.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Test Types\\frmEditTestTypes.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Test Types\\frmEditTestTypes.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Test Types\\frmEditTestTypes.cs [Design]",
-              "RelativeToolTip": "DVLD Project Version 1.0\\Test Types\\frmEditTestTypes.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T17:13:10.437Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmListTestTypes.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Test Types\\frmListTestTypes.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Test Types\\frmListTestTypes.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Test Types\\frmListTestTypes.cs",
-              "RelativeToolTip": "DVLD Project Version 1.0\\Test Types\\frmListTestTypes.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAnwDoAAAAAAAAAAAAAAA==",
+              "Title": "clsApplicationData.cs",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsApplicationData.cs",
+              "RelativeDocumentMoniker": "DVLD-DataAccessLayer\\clsApplicationData.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsApplicationData.cs",
+              "RelativeToolTip": "DVLD-DataAccessLayer\\clsApplicationData.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAiwHgBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T17:06:36.024Z",
+              "WhenOpened": "2026-07-23T19:56:36.091Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmListTestTypes.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Test Types\\frmListTestTypes.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Test Types\\frmListTestTypes.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Test Types\\frmListTestTypes.cs [Design]",
-              "RelativeToolTip": "DVLD Project Version 1.0\\Test Types\\frmListTestTypes.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-23T16:31:29.713Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
