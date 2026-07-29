@@ -139,7 +139,7 @@ namespace DVLD_DataAccessLayer
 
             string query = @"Insert into LocalDrivingLicenseApplications(ApplicationID,LicenseClassID)
                             Values(@ApplicationID,@LicenseClassID);
-                            Select Scope_Idnetity();";
+                            Select Scope_Identity();";
 
             SqlCommand command = new SqlCommand(query, connection);
 

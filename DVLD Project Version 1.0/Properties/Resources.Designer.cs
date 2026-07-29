@@ -143,6 +143,16 @@ namespace DVLD_Project_Version_1._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendar_24 {
+            get {
+                object obj = ResourceManager.GetObject("calendar_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap change_Password {
             get {
                 object obj = ResourceManager.GetObject("change Password", resourceCulture);
@@ -186,6 +196,16 @@ namespace DVLD_Project_Version_1._0.Properties {
         internal static System.Drawing.Bitmap country {
             get {
                 object obj = ResourceManager.GetObject("country", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CreatedBy_24 {
+            get {
+                object obj = ResourceManager.GetObject("CreatedBy_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

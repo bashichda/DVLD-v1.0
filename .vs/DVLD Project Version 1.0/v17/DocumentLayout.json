@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld-businesslayer\\clslocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|solutionrelative:dvld-businesslayer\\clslocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\dvld project version 1.0\\applications\\localdrivinglicenseapplications\\frmaddupdatelocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\applications\\localdrivinglicenseapplications\\frmaddupdatelocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld-dataaccesslayer\\clslocaldrivinglicenseapplicationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|solutionrelative:dvld-dataaccesslayer\\clslocaldrivinglicenseapplicationdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\applications\\localdrivinglicenseapplications\\frmaddupdatelocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\applications\\localdrivinglicenseapplications\\frmaddupdatelocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,28 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsLocalDrivingLicenseApplication.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsLocalDrivingLicenseApplication.cs",
-              "RelativeDocumentMoniker": "DVLD-BusinessLayer\\clsLocalDrivingLicenseApplication.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsLocalDrivingLicenseApplication.cs",
-              "RelativeToolTip": "DVLD-BusinessLayer\\clsLocalDrivingLicenseApplication.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAiwEMAAAAaAAAAAAAAAA==",
+              "Title": "frmAddUpdateLocalDrivingLicenseApplication.cs",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Applications\\LocalDrivingLicenseApplications\\frmAddUpdateLocalDrivingLicenseApplication.cs",
+              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Applications\\LocalDrivingLicenseApplications\\frmAddUpdateLocalDrivingLicenseApplication.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Applications\\LocalDrivingLicenseApplications\\frmAddUpdateLocalDrivingLicenseApplication.cs",
+              "RelativeToolTip": "DVLD Project Version 1.0\\Applications\\LocalDrivingLicenseApplications\\frmAddUpdateLocalDrivingLicenseApplication.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAlwL8AAABlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T18:42:00.172Z",
+              "WhenOpened": "2026-07-29T16:27:51.422Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "clsLocalDrivingLicenseApplicationData.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsLocalDrivingLicenseApplicationData.cs",
-              "RelativeDocumentMoniker": "DVLD-DataAccessLayer\\clsLocalDrivingLicenseApplicationData.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsLocalDrivingLicenseApplicationData.cs",
-              "RelativeToolTip": "DVLD-DataAccessLayer\\clsLocalDrivingLicenseApplicationData.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwOwAAAAAAAAAAAAAAA==",
+              "Title": "frmAddUpdateLocalDrivingLicenseApplication.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Applications\\LocalDrivingLicenseApplications\\frmAddUpdateLocalDrivingLicenseApplication.cs",
+              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Applications\\LocalDrivingLicenseApplications\\frmAddUpdateLocalDrivingLicenseApplication.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Applications\\LocalDrivingLicenseApplications\\frmAddUpdateLocalDrivingLicenseApplication.cs [Design]",
+              "RelativeToolTip": "DVLD Project Version 1.0\\Applications\\LocalDrivingLicenseApplications\\frmAddUpdateLocalDrivingLicenseApplication.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-07-28T12:06:45.195Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-07-29T16:02:25.042Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

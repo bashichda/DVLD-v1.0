@@ -80,7 +80,7 @@ namespace DVLD_BusinessLayer
             switch (Mode)
             {
                 case enMode.AddNew:
-                    if (true)
+                    if (_AddNewLocalDrivingLicenseApplication())
                     {
                         Mode = enMode.Update;
                         return true;
