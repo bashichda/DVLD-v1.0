@@ -118,14 +118,14 @@ namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
             if (ActiveApplicationID != -1)
             {
                 MessageBox.Show("Chooese Another License Class, the selected Person Already Has an Active Application for the selected class with ID = " + ActiveApplicationID,
-                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cbLicenseClass.Focus();
                 return;
             }
 
             if (clsLicense.isLicenseExistByPersonID(ctrlPersonCardWithFilter1.PersonID, LicenseClassID))
             {
-                MessageBox.Show("Person Already Have a license with the same applied class, choose deffrent driving Class", "Not Allowed",
+                MessageBox.Show("Person Already Have a license with the same applied class, choose different driving Class", "Not Allowed",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
                 cbLicenseClass.Focus();
                 return;
@@ -152,12 +152,6 @@ namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
             {
                 MessageBox.Show("Error : Data is not saved Succesfully.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void DataBackEvent(object sender,int PersonID)
-        {
-            _SelectedPersonID = PersonID;
-            ctrlPersonCardWithFilter1.LoadPersonInf(PersonID);
         }
 
         private void ctrlPersonCardWithFilter1_OnPersonSelected(int obj)
