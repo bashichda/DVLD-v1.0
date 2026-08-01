@@ -74,7 +74,7 @@ namespace DVLD_BusinessLayer
             this.LastStatusDate = LastStatusDate;
             this.PaidFees = PaidFees;
             this.CreatedByUserID = CreatedUserID;
-            this.CreatedByUserInfo = clsUser.FindUserByPersonID(CreatedUserID);
+            this.CreatedByUserInfo = clsUser.FindUserByUserID(CreatedUserID);
             Mode = enMode.Update;
 
         }

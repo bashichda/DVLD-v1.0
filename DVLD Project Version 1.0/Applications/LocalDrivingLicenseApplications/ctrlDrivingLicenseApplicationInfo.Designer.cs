@@ -1,6 +1,6 @@
 ﻿namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
 {
-    partial class ctrlLicenseApplicationInfo
+    partial class ctrlDrivingLicenseApplicationInfo
     {
         /// <summary> 
         /// Required designer variable.

@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
 {
-    public partial class ctrlLicenseApplicationInfo : UserControl
+    public partial class ctrlDrivingLicenseApplicationInfo : UserControl
     {
         
         private clsLocalDrivingLicenseApplication _LocalDrivingLicenseApplication;
@@ -29,13 +29,15 @@ namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
             }
         }
 
-        public ctrlLicenseApplicationInfo()
+        public ctrlDrivingLicenseApplicationInfo()
         {
             InitializeComponent();
         }
 
         public void LoadApplicationInfoByLocalDrivingAppID(int LocalDrivingLicenseApplicationID)
         {
+            _LocalDrivingLicenseApplicationID = LocalDrivingLicenseApplicationID;
+
             _LocalDrivingLicenseApplication = clsLocalDrivingLicenseApplication.FindByLocalDrivingLicenseApplicationID(_LocalDrivingLicenseApplicationID);
 
             if (_LocalDrivingLicenseApplication == null)
