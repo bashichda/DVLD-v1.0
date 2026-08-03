@@ -95,7 +95,7 @@ namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
                 return;
             }
 
-            ctrlPersonCardWithFilter1.LoadPersonInf(_LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID);
+            ctrlPersonCardWithFilter1.LoadPersonInf(_LocalDrivingLicenseApplication.ApplicantPersonID);
             lblLoclaDrivingApplicationID.Text = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID.ToString();
             lblApplicationDate.Text = _LocalDrivingLicenseApplication.ApplicationDate.ToShortDateString();
             cbLicenseClass.SelectedIndex = cbLicenseClass.FindString(clsLicenseClass.Find(_LocalDrivingLicenseApplication.LicenseClassID).ClassName);

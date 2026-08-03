@@ -63,7 +63,7 @@ namespace DVLD_DataAccessLayer
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
 
-            string query = @"Select * From Applications;";
+            string query = @"Select * From LocalDrivingLicenseApplications_View;";
 
             SqlCommand command = new SqlCommand(query, connection);
 

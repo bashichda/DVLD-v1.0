@@ -70,8 +70,8 @@ namespace DVLD_DataAccessLayer
 
                     ClassName = (string)reader["ClassName"];
                     ClassDescription = (string)reader["ClassDescription"];
-                    MinimumAllowedAge = (short)reader["MinimumAllowedAge"];
-                    MaximumAllowedAge = (short)reader["MaximumAllowedAge"];
+                    MinimumAllowedAge = (byte)reader["MinimumAllowedAge"];
+                    MaximumAllowedAge = (byte)reader["DefaultValidityLength"];
                     ClassFees = (decimal)reader["ClassFees"];
                 }
 

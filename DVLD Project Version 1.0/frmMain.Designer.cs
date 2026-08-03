@@ -198,6 +198,7 @@
             this.localDrivingLicenseToolStripMenuItem.Name = "localDrivingLicenseToolStripMenuItem";
             this.localDrivingLicenseToolStripMenuItem.Size = new System.Drawing.Size(401, 38);
             this.localDrivingLicenseToolStripMenuItem.Text = "Local Driving License Applications";
+            this.localDrivingLicenseToolStripMenuItem.Click += new System.EventHandler(this.localDrivingLicenseToolStripMenuItem_Click);
             // 
             // internatinalLicenseApplicationsToolStripMenuItem
             // 

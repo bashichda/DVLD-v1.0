@@ -58,7 +58,7 @@ namespace DVLD_Project_Version_1._0.Applications
             lblApplicantPerson.Text = _Application.ApplicantFullName;
             lblAplicationDate.Text = _Application.ApplicationDate.ToShortDateString();
             lblLastStatusDate.Text = _Application.LastStatusDate.ToShortDateString();
-            lblCreatedByUser.Text = clsGlobal.CurrentUser.UserName;
+            lblCreatedByUser.Text = _Application.CreatedByUserInfo.UserName;
         }
 
         public void ResetApplicactionInfo()
