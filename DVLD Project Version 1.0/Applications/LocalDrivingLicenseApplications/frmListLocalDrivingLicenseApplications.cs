@@ -138,15 +138,12 @@ namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
 
         private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //we allow number incase person id is selected.
+            //we allow number incase L.D.L.AppID id is selected.
             if (cbFilterValue.Text == "L.D.L.AppID")
                 e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
         }
 
-        private void secheduleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("This Feature is not Implement yet", "Feature", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        }
+        
 
         private void showPersonToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -190,7 +187,8 @@ namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
 
         private void deleteApplicationToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            clsLocalDrivingLicenseApplication localDrivingLicenseApplication = clsLocalDrivingLicenseApplication.FindByLocalDrivingLicenseApplicationID((int)dgvListLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value);
+            clsLocalDrivingLicenseApplication localDrivingLicenseApplication = 
+                clsLocalDrivingLicenseApplication.FindByLocalDrivingLicenseApplicationID((int)dgvListLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value);
 
             if (MessageBox.Show($"Are you sure you wanna Delete This Application With ID = {localDrivingLicenseApplication.ApplicationID.ToString()} ?","Confirmation",
                 MessageBoxButtons.OKCancel,MessageBoxIcon.Warning) == DialogResult.OK)

@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace DVLD_Project_Version_1._0.Global_Classes
 {
-    internal class clsGlobal
+    public class clsGlobal
     {
         public static clsUser CurrentUser;
 
