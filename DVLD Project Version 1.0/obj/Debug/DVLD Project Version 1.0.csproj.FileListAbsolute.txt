@@ -35,3 +35,4 @@ C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications.ctrlDrivingLicenseApplicationInfo.resources
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications.frmLocalDrivingLicenseApplicationInfo.resources
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications.frmListLocalDrivingLicenseApplications.resources
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Test.Controls.ctrlScheduleTest.resources

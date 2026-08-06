@@ -164,5 +164,10 @@ namespace DVLD_BusinessLayer
         {
             return clsLocalDrivingLicenseApplicationData.DoesPassTestType(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
         }
+
+        public bool DoesAttendTestType(clsTestTypes.enTestType TestTypeID)
+        {
+            return clsLocalDrivingLicenseApplicationData.DoesAttendTestType(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
+        }
     }
 }

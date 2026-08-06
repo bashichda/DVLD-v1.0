@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld-businesslayer\\clstestappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|solutionrelative:dvld-businesslayer\\clstestappointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\test\\controls\\ctrlscheduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\test\\controls\\ctrlscheduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld-dataaccesslayer\\clstestappointmentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|solutionrelative:dvld-dataaccesslayer\\clstestappointmentdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\test\\controls\\ctrlscheduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\test\\controls\\ctrlscheduletest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,28 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsTestAppointment.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsTestAppointment.cs",
-              "RelativeDocumentMoniker": "DVLD-BusinessLayer\\clsTestAppointment.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsTestAppointment.cs",
-              "RelativeToolTip": "DVLD-BusinessLayer\\clsTestAppointment.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAYwBoAAAAZAAAAAAAAAA==",
+              "Title": "ctrlScheduleTest.cs",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Test\\Controls\\ctrlScheduleTest.cs",
+              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Test\\Controls\\ctrlScheduleTest.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Test\\Controls\\ctrlScheduleTest.cs",
+              "RelativeToolTip": "DVLD Project Version 1.0\\Test\\Controls\\ctrlScheduleTest.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAADwv3EAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-04T12:52:08.768Z",
+              "WhenOpened": "2026-08-06T16:46:38.947Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "clsTestAppointmentData.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsTestAppointmentData.cs",
-              "RelativeDocumentMoniker": "DVLD-DataAccessLayer\\clsTestAppointmentData.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsTestAppointmentData.cs",
-              "RelativeToolTip": "DVLD-DataAccessLayer\\clsTestAppointmentData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE8BAAAAAAAAAAAAAA==",
+              "Title": "ctrlScheduleTest.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Test\\Controls\\ctrlScheduleTest.cs",
+              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Test\\Controls\\ctrlScheduleTest.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Test\\Controls\\ctrlScheduleTest.cs [Design]",
+              "RelativeToolTip": "DVLD Project Version 1.0\\Test\\Controls\\ctrlScheduleTest.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-04T11:14:32.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-08-06T11:12:50.654Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }
