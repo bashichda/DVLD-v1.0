@@ -18,13 +18,15 @@ namespace DVLD_BusinessLayer
         public int LocalDrivingLicenseApplicationID { get; set; }
         public int LicenseClassID { get; set; }
 
-        public string PersonInfo
+        public string PersonFullName
         {
             get
             {
                 return base.PersonInfo.FullName;
             }
         }
+
+        public clsLicenseClass LicenseClassInfo;
 
         public clsLocalDrivingLicenseApplication()
         {
@@ -47,7 +49,7 @@ namespace DVLD_BusinessLayer
             this.PaidFees = PaidFees;
             this.CreatedByUserID = CreatedByUserID;
             this.LicenseClassID = LicenseClassID;
-            //here clsLicenseClass.find
+            this.LicenseClassInfo = clsLicenseClass.Find(LicenseClassID);
             Mode = enMode.Update;
         }
 
@@ -168,6 +170,16 @@ namespace DVLD_BusinessLayer
         public bool DoesAttendTestType(clsTestTypes.enTestType TestTypeID)
         {
             return clsLocalDrivingLicenseApplicationData.DoesAttendTestType(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
+        }
+
+        public byte TotalTrialsPerTest(clsTestTypes.enTestType TestTypeID)
+        {
+            return clsLocalDrivingLicenseApplicationData.TotalTrialsPerTest(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
+        }
+
+        public static  bool IsThereAnActiveScheduledTest(int LocalDrivingLicenseApplicationID,clsTestTypes.enTestType TestTypeID)
+        {
+            return clsLocalDrivingLicenseApplicationData.IsThereAnActiveScheduledTest(LocalDrivingLicenseApplicationID, (int)TestTypeID);
         }
     }
 }
