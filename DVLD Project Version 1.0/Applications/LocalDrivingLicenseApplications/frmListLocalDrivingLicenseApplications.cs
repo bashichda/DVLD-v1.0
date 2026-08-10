@@ -1,4 +1,5 @@
 ﻿using DVLD_BusinessLayer;
+using DVLD_Project_Version_1._0.Test;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -248,6 +249,30 @@ namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
                 // Street Test:
                 scheduleStreetTestToolStripMenuItem.Enabled = PassedVisionTest && PassedWrittenTest && !PassedStreetTest;
             }
+        }
+
+        private void scheduleVisionTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListTestAppointment frm = new frmListTestAppointment((int)dgvListLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value, clsTestTypes.enTestType.Visiontest);
+            frm.ShowDialog();
+
+            frmListLocalDrivingLicenseApplications_Load(null, null);
+        }
+
+        private void scheduleWrittenTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListTestAppointment frm = new frmListTestAppointment((int)dgvListLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value, clsTestTypes.enTestType.WrittenTest);
+            frm.ShowDialog();
+
+            frmListLocalDrivingLicenseApplications_Load(null, null);
+        }
+
+        private void scheduleStreetTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListTestAppointment frm = new frmListTestAppointment((int)dgvListLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value, clsTestTypes.enTestType.StreetTest);
+            frm.ShowDialog();
+
+            frmListLocalDrivingLicenseApplications_Load(null, null);
         }
     }
 }

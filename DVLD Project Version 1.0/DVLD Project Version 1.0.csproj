@@ -127,6 +127,12 @@
     <Compile Include="Test\Controls\ctrlScheduleTest.Designer.cs">
       <DependentUpon>ctrlScheduleTest.cs</DependentUpon>
     </Compile>
+    <Compile Include="Test\frmListTestAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Test\frmListTestAppointment.Designer.cs">
+      <DependentUpon>frmListTestAppointment.cs</DependentUpon>
+    </Compile>
     <Compile Include="Test\frmScheduleTest.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Test\Controls\ctrlScheduleTest.resx">
       <DependentUpon>ctrlScheduleTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Test\frmListTestAppointment.resx">
+      <DependentUpon>frmListTestAppointment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Test\frmScheduleTest.resx">
       <DependentUpon>frmScheduleTest.cs</DependentUpon>
@@ -544,6 +553,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Written_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Appointment_64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\New Appointment_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\takeTest_32.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

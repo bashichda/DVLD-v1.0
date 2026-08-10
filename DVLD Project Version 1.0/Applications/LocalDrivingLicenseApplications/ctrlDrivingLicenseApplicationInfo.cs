@@ -54,13 +54,14 @@ namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
 
         private void _FillLocalDrivingLicenseApplicationInfo()
         {
-            //_LicenseID = _LocalDrivingLicenseApplication.GetActiveLicenseID();
+            _LicenseID = _LocalDrivingLicenseApplication.GetActiveLicenseID();
 
             llShowLienseInfo.Enabled = (_LicenseID != -1);
 
             lblDrivingLicenseApplicationID.Text = _LocalDrivingLicenseApplication.LocalDrivingLicenseApplicationID.ToString();
             lblAppliedForLicense.Text = clsLicenseClass.Find(_LocalDrivingLicenseApplication.LicenseClassID).ClassName.ToString();
-            lblPassedTests.Text = $"0/3";
+            lblPassedTests.Text = "0/3";
+            //lblPassedTests.Text = _LocalDrivingLicenseApplication.GetPassedTestCount().To.String() + "/3";
             ctrlApplicationBasicInfo1.LoadApplicationInfo(_LocalDrivingLicenseApplication.ApplicationID);
         }
 
@@ -74,5 +75,7 @@ namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
 
             ctrlApplicationBasicInfo1.ResetApplicactionInfo();
         }
+
+        
     }
 }

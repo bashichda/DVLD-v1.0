@@ -22,7 +22,7 @@ namespace DVLD_BusinessLayer
         {
             get
             {
-                return base.PersonInfo.FullName;
+                return clsPerson.Find(ApplicantPersonID).FullName;
             }
         }
 
@@ -177,9 +177,19 @@ namespace DVLD_BusinessLayer
             return clsLocalDrivingLicenseApplicationData.TotalTrialsPerTest(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
         }
 
-        public static  bool IsThereAnActiveScheduledTest(int LocalDrivingLicenseApplicationID,clsTestTypes.enTestType TestTypeID)
+        public bool IsThereAnActiveScheduledTest(clsTestTypes.enTestType TestTypeID)
+        {
+            return clsLocalDrivingLicenseApplicationData.IsThereAnActiveScheduledTest(this.LocalDrivingLicenseApplicationID, (int)TestTypeID);
+        }
+
+        public static bool IsThereAnActiveScheduledTest(int LocalDrivingLicenseApplicationID, clsTestTypes.enTestType TestTypeID)
         {
             return clsLocalDrivingLicenseApplicationData.IsThereAnActiveScheduledTest(LocalDrivingLicenseApplicationID, (int)TestTypeID);
         }
+
+        //public byte GetPassedTestCount()
+        //{
+            
+        //}
     }
 }

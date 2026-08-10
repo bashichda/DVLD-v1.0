@@ -543,6 +543,26 @@ namespace DVLD_Project_Version_1._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap New_Appointment_32 {
+            get {
+                object obj = ResourceManager.GetObject("New Appointment_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap New_Appointment_64 {
+            get {
+                object obj = ResourceManager.GetObject("New Appointment_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap newDriverLices_32 {
             get {
                 object obj = ResourceManager.GetObject("newDriverLices_32", resourceCulture);
@@ -786,6 +806,16 @@ namespace DVLD_Project_Version_1._0.Properties {
         internal static System.Drawing.Bitmap street_test {
             get {
                 object obj = ResourceManager.GetObject("street test", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap takeTest_32 {
+            get {
+                object obj = ResourceManager.GetObject("takeTest_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
