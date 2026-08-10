@@ -104,7 +104,7 @@ namespace DVLD_Project_Version_1._0.Test
 
             if (LocalDrivingLicesnseApplication.DoesPassTestType(_TestTypeID))
             {
-                MessageBox.Show("This Person Already Passed thi test before,you can only retake failed test.", "Not Allowed", MessageBoxButtons.OK,
+                MessageBox.Show("This Person Already Passed this test before,you can only retake failed test.", "Not Allowed", MessageBoxButtons.OK,
                     MessageBoxIcon.Error);
                 return;
             }
@@ -119,7 +119,7 @@ namespace DVLD_Project_Version_1._0.Test
         {
             int TestAppointmentID = (int)dgvListTestAppointemts.CurrentRow.Cells[0].Value;
 
-            frmScheduleTest frm = new frmScheduleTest(ctrlDrivingLicenseApplicationInfo1.LocalDrivingLicenseApplicationID, _TestTypeID, TestAppointmentID);
+            frmScheduleTest frm = new frmScheduleTest(_LocalDrivingLicenseApplicationID, _TestTypeID, TestAppointmentID);
             frm.ShowDialog();
 
             frmListTestAppointment_Load(null, null);
