@@ -215,7 +215,7 @@ namespace DVLD_Project_Version_1._0.Test.Controls
 
                     //Street Test, you cannot sechdule it before person passes the written test.
                     //we check if pass Written 2.
-                    if (!_LocalDrivingLicenseApplication.DoesPassTestType(clsTestTypes.enTestType.WrittenTest)
+                    if (!_LocalDrivingLicenseApplication.DoesPassTestType(clsTestTypes.enTestType.WrittenTest))
                     {
                         lblUserMessage.Visible = true;
                         lblUserMessage.Text = "Cannot Schedule, Written Test Should Be Passed First";
