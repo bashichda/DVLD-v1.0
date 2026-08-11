@@ -187,9 +187,9 @@ namespace DVLD_BusinessLayer
             return clsLocalDrivingLicenseApplicationData.IsThereAnActiveScheduledTest(LocalDrivingLicenseApplicationID, (int)TestTypeID);
         }
 
-        //public byte GetPassedTestCount()
-        //{
-            
-        //}
+        public byte GetPassedTestCount()
+        {
+            return clsTest.GetPassedTestCount(this.LocalDrivingLicenseApplicationID);    
+        }
     }
 }

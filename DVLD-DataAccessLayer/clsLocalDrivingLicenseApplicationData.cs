@@ -341,7 +341,7 @@ namespace DVLD_DataAccessLayer
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
 
             string query = @"Select TotalTrialPerTest = Count(TestID) From LocalDrivingLicenseApplications
-                            Inner Join TestAppointments On LocalDrivingLicenseApplicaitons.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID
+                            Inner Join TestAppointments On LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = TestAppointments.LocalDrivingLicenseApplicationID
                             Inner Join Tests On TestAppointments.TestAppointmentID = Tests.TestAppointmentID
                             Where
                             (LocalDrivingLicenseApplications.LocalDrivingLicenseApplicationID = @LocalDrivingLicenseApplicationID)

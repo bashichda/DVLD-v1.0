@@ -124,5 +124,13 @@ namespace DVLD_Project_Version_1._0.Test
 
             frmListTestAppointment_Load(null, null);
         }
+
+        private void takeTestToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTakeTest frm = new frmTakeTest((int)dgvListTestAppointemts.CurrentRow.Cells[0].Value, _TestTypeID);
+            frm.ShowDialog();
+
+            frmListTestAppointment_Load(null, null);
+        }
     }
 }
