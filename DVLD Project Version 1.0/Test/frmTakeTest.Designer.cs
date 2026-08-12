@@ -61,6 +61,7 @@
             this.lblUserMessage.Size = new System.Drawing.Size(227, 18);
             this.lblUserMessage.TabIndex = 16;
             this.lblUserMessage.Text = "You cannot change the result";
+            this.lblUserMessage.Visible = false;
             // 
             // rbFail
             // 
@@ -132,6 +133,7 @@
             this.ctrlScheduledTest1.Name = "ctrlScheduledTest1";
             this.ctrlScheduledTest1.Size = new System.Drawing.Size(553, 574);
             this.ctrlScheduledTest1.TabIndex = 9;
+            this.ctrlScheduledTest1.TestType = DVLD_BusinessLayer.clsTestTypes.enTestType.Visiontest;
             // 
             // btnSave
             // 
