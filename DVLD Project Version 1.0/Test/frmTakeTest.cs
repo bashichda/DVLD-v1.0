@@ -35,37 +35,39 @@ namespace DVLD_Project_Version_1._0.Test
 
             if (ctrlScheduledTest1.TestAppointmentID == -1)
             {
-                btnSave.Enabled = false;    
+                btnSave.Enabled = false;
             }
             else
             {
                 btnSave.Enabled = true;
+            }
 
-                 _TestID = ctrlScheduledTest1.TestID;
+            _TestID = ctrlScheduledTest1.TestID;
 
-                if (_TestID != -1)
+            if (_TestID != -1)
+            {
+                _Test = clsTest.Find(_TestID);
+
+                if (_Test.TestResult)
                 {
-                    _Test = clsTest.Find(_TestID);
-
-                    if (_Test.TestResult)
-                    {
-                        rbPass.Checked = true;
-                    }
-                    else
-                    {
-                        rbFail.Checked = true;
-                    }
-
-                    txtNotes.Text = _Test.Notes;
-                    lblUserMessage.Visible = true;
-                    rbPass.Enabled = false;
-                    rbFail.Enabled = false;
+                    rbPass.Checked = true;
                 }
                 else
                 {
-                    _Test = new clsTest();
+                    rbFail.Checked = true;
                 }
+
+                txtNotes.Text = _Test.Notes;
+                lblUserMessage.Visible = true;
+                rbPass.Enabled = false;
+                rbFail.Enabled = false;
             }
+            else
+            {
+                _Test = new clsTest();
+            }
+
+        
         }
 
         private void btnClose_Click(object sender, EventArgs e)
