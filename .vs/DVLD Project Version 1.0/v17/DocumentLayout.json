@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld-businesslayer\\clslicenseclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|solutionrelative:dvld-businesslayer\\clslicenseclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld-businesslayer\\clslicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5ECE151C-429A-4B72-905F-275108D8827C}|DVLD-BusinessLayer\\DVLD-BusinessLayer.csproj|solutionrelative:dvld-businesslayer\\clslicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld-dataaccesslayer\\clslicenseclassdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|solutionrelative:dvld-dataaccesslayer\\clslicenseclassdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld-dataaccesslayer\\clslicensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA2AD5CD-4817-47EB-B9A5-82A29C5C343C}|DVLD-DataAccessLayer\\DVLD-DataAccessLayer.csproj|solutionrelative:dvld-dataaccesslayer\\clslicensedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "clsLicenseClass.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsLicenseClass.cs",
-              "RelativeDocumentMoniker": "DVLD-BusinessLayer\\clsLicenseClass.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsLicenseClass.cs",
-              "RelativeToolTip": "DVLD-BusinessLayer\\clsLicenseClass.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAArAAAAAAAAAA==",
+              "Title": "clsLicense.cs",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsLicense.cs",
+              "RelativeDocumentMoniker": "DVLD-BusinessLayer\\clsLicense.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-BusinessLayer\\clsLicense.cs",
+              "RelativeToolTip": "DVLD-BusinessLayer\\clsLicense.cs",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAAALMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T12:19:49.194Z",
+              "WhenOpened": "2026-08-15T11:29:23.889Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "clsLicenseClassData.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsLicenseClassData.cs",
-              "RelativeDocumentMoniker": "DVLD-DataAccessLayer\\clsLicenseClassData.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsLicenseClassData.cs",
-              "RelativeToolTip": "DVLD-DataAccessLayer\\clsLicenseClassData.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAALIAAAAQAAAAAAAAAA==",
+              "Title": "clsLicenseData.cs",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsLicenseData.cs",
+              "RelativeDocumentMoniker": "DVLD-DataAccessLayer\\clsLicenseData.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD-DataAccessLayer\\clsLicenseData.cs",
+              "RelativeToolTip": "DVLD-DataAccessLayer\\clsLicenseData.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAACABAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-13T11:53:05.793Z",
+              "WhenOpened": "2026-08-15T10:37:31.803Z",
               "EditorCaption": ""
             }
           ]
