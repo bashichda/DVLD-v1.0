@@ -41,3 +41,5 @@ C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Test.Controls.ctrlScheduledTest.resources
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Test.frmTakeTest.resources
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Licenses.Local_Licenses.frmIssueDriverLicenseFirstTime.resources
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Licenses.Controls.ctrlDriverLicenseInfo.resources
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Licenses.Local_Licenses.Controls.ctrlDriverLicenseInfoWithFilter.resources

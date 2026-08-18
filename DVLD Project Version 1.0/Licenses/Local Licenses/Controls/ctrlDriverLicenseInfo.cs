@@ -78,11 +78,11 @@ namespace DVLD_Project_Version_1._0.Licenses.Controls
 
             string ImagePath = _License.DriverInfo.PersonInfo.ImagePath;
 
-            if (ImagePath != "")
+            if (!string.IsNullOrEmpty(ImagePath))
             {
                 if (File.Exists(ImagePath))
                 {
-                    pbPersonImage.Load(ImagePath);
+                    pbPersonImage.ImageLocation = ImagePath;
                 }
                 else
                 {

@@ -359,7 +359,7 @@
             // 
             // pictureBox6
             // 
-            this.pictureBox6.Image = typeof(DVLD_Project_Version_1._0.Properties.Resources).Name;
+            this.pictureBox6.Image = global::DVLD_Project_Version_1._0.Properties.Resources.Name;
             this.pictureBox6.Location = new System.Drawing.Point(137, 67);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(24, 24);
