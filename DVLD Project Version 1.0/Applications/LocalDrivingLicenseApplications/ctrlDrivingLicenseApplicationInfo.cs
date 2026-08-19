@@ -1,5 +1,6 @@
 ﻿using DVLD_BusinessLayer;
 using DVLD_Project_Version_1._0.Global_Classes;
+using DVLD_Project_Version_1._0.Licenses.Local_Licenses;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -75,6 +76,10 @@ namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
             ctrlApplicationBasicInfo1.ResetApplicactionInfo();
         }
 
-        
+        private void llShowLienseInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmShowDriverLicenseInfo frm = new frmShowDriverLicenseInfo(_LicenseID);
+            frm.ShowDialog();
+        }
     }
 }

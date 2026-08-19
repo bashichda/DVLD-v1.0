@@ -77,6 +77,7 @@
             this.llShowLienseInfo.TabIndex = 10;
             this.llShowLienseInfo.TabStop = true;
             this.llShowLienseInfo.Text = "Show License Info";
+            this.llShowLienseInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llShowLienseInfo_LinkClicked);
             // 
             // pictureBox4
             // 

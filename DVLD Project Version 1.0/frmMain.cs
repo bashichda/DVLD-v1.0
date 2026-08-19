@@ -1,5 +1,6 @@
 ﻿using DVLD_Project_Version_1._0.Application_Types;
 using DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications;
+using DVLD_Project_Version_1._0.Applications.Renew_Local_License;
 using DVLD_Project_Version_1._0.Global_Classes;
 using DVLD_Project_Version_1._0.Test_Types;
 using DVLD_Project_Version_1._0.Users;
@@ -84,6 +85,12 @@ namespace DVLD_Project_Version_1._0
         private void retakeTestToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmListLocalDrivingLicenseApplications frm = new frmListLocalDrivingLicenseApplications();
+            frm.ShowDialog();
+        }
+
+        private void renewDrivngLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmRenewLocalDrivingLicenseApplication frm = new frmRenewLocalDrivingLicenseApplication();
             frm.ShowDialog();
         }
     }

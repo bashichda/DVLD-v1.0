@@ -175,5 +175,51 @@ namespace DVLD_BusinessLayer
                     return "First Time";
             }
         }
+
+        public clsLicense RenewLicense(string Notes,int CreatedByUserID)
+        {
+            // First Create Application:
+
+            clsApplications Application = new clsApplications();
+
+            Application.ApplicantPersonID = this.DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
+            Application.ApplicationTypeID = (int)clsApplications.enApplicationType.RenewDrivingLicense;
+            Application.ApplicationStatus = clsApplications.enApplicationStatus.Completed;
+            Application.LastStatusDate = DateTime.Now;
+            Application.PaidFees = clsApplicationTypes.Find((int)clsApplications.enApplicationType.RenewDrivingLicense).ApplicationTypeFees;
+            Application.CreatedByUserID = CreatedByUserID;
+
+            if (!Application.Save())
+            {
+                return null;
+            }
+
+            clsLicense NewLicense = new clsLicense();
+
+            NewLicense.ApplicationID = Application.ApplicationID;
+            NewLicense.DriverID = this.DriverID;
+            NewLicense.LicenseClass = this.LicenseClass;
+            NewLicense.IssueDate = DateTime.Now;
+
+            int DefaultValidityLength = this.LicenseClassInfo.DefaultValidityLength;
+
+            NewLicense.ExpirationDate = DateTime.Now.AddYears(DefaultValidityLength);
+            NewLicense.Notes = Notes;
+            NewLicense.PaidFees = this.LicenseClassInfo.ClassFees;
+            NewLicense.IsActive = true;
+            NewLicense.IssueReason = clsLicense.enIssueReason.Renew;
+            NewLicense.CreatedByUserID = CreatedByUserID;
+
+            if (!NewLicense.Save())
+            {
+                return null;
+            }
+
+            // we need to desactivate the old license:
+            DesctivateCurrentLicense();
+
+            return NewLicense;
+        }
     }
 }
