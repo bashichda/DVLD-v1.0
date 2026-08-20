@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\applications\\renew local license\\frmrenewlocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\applications\\renew local license\\frmrenewlocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\applications\\replacelostordemagedlicense\\frmreplacelostordemagedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\applications\\replacelostordemagedlicense\\frmreplacelostordemagedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\applications\\renew local license\\frmrenewlocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\applications\\renew local license\\frmrenewlocaldrivinglicenseapplication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|c:\\users\\bashichda\\source\\repos\\dvld project version 1.0\\dvld project version 1.0\\applications\\replacelostordemagedlicense\\frmreplacelostordemagedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{EDA55875-D5B3-4759-BD09-CECEC4B1AEB6}|DVLD Project Version 1.0\\DVLD Project Version 1.0.csproj|solutionrelative:dvld project version 1.0\\applications\\replacelostordemagedlicense\\frmreplacelostordemagedlicense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmRenewLocalDrivingLicenseApplication.cs",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Applications\\Renew Local License\\frmRenewLocalDrivingLicenseApplication.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Applications\\Renew Local License\\frmRenewLocalDrivingLicenseApplication.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Applications\\Renew Local License\\frmRenewLocalDrivingLicenseApplication.cs",
-              "RelativeToolTip": "DVLD Project Version 1.0\\Applications\\Renew Local License\\frmRenewLocalDrivingLicenseApplication.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Title": "frmReplaceLostOrDemagedLicense.cs",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Applications\\ReplaceLostOrDemagedLicense\\frmReplaceLostOrDemagedLicense.cs",
+              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Applications\\ReplaceLostOrDemagedLicense\\frmReplaceLostOrDemagedLicense.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Applications\\ReplaceLostOrDemagedLicense\\frmReplaceLostOrDemagedLicense.cs",
+              "RelativeToolTip": "DVLD Project Version 1.0\\Applications\\ReplaceLostOrDemagedLicense\\frmReplaceLostOrDemagedLicense.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAowIIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T13:06:38.13Z",
+              "WhenOpened": "2026-08-20T11:49:12.73Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmRenewLocalDrivingLicenseApplication.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Applications\\Renew Local License\\frmRenewLocalDrivingLicenseApplication.cs",
-              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Applications\\Renew Local License\\frmRenewLocalDrivingLicenseApplication.cs",
-              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Applications\\Renew Local License\\frmRenewLocalDrivingLicenseApplication.cs [Design]",
-              "RelativeToolTip": "DVLD Project Version 1.0\\Applications\\Renew Local License\\frmRenewLocalDrivingLicenseApplication.cs [Design]",
+              "Title": "frmReplaceLostOrDemagedLicense.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Applications\\ReplaceLostOrDemagedLicense\\frmReplaceLostOrDemagedLicense.cs",
+              "RelativeDocumentMoniker": "DVLD Project Version 1.0\\Applications\\ReplaceLostOrDemagedLicense\\frmReplaceLostOrDemagedLicense.cs",
+              "ToolTip": "C:\\Users\\Bashichda\\source\\repos\\DVLD Project Version 1.0\\DVLD Project Version 1.0\\Applications\\ReplaceLostOrDemagedLicense\\frmReplaceLostOrDemagedLicense.cs [Design]",
+              "RelativeToolTip": "DVLD Project Version 1.0\\Applications\\ReplaceLostOrDemagedLicense\\frmReplaceLostOrDemagedLicense.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-08-19T12:13:36.905Z",
+              "WhenOpened": "2026-08-20T11:33:57.53Z",
               "EditorCaption": " [Design]"
             }
           ]

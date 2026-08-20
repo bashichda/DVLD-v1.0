@@ -149,7 +149,7 @@ namespace DVLD_BusinessLayer
             return clsLicenseData.GetDriverLicenses(DriverID);
         }
 
-        public bool DesctivateCurrentLicense()
+        public bool DesactivateCurrentLicense()
         {
             return clsLicenseData.DesactivateLicense(this.LicenseID);
         }
@@ -217,7 +217,54 @@ namespace DVLD_BusinessLayer
             }
 
             // we need to desactivate the old license:
-            DesctivateCurrentLicense();
+            DesactivateCurrentLicense();
+
+            return NewLicense;
+        }
+
+        public clsLicense Replace(enIssueReason IssueReason,int CreatedByUserID)
+        {
+            // Create an Application:
+
+            clsApplications Application = new clsApplications();
+
+            Application.ApplicantPersonID = DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
+            Application.ApplicationTypeID = (IssueReason == enIssueReason.DamageReplacement) ?
+                (int)clsApplications.enApplicationType.ReplaceDamagedDrivingLicense :
+                (int)clsApplications.enApplicationType.ReplaceLostDrivingLicense;
+            Application.ApplicationStatus = clsApplications.enApplicationStatus.Completed;
+            Application.LastStatusDate = DateTime.Now;
+            Application.PaidFees = clsApplicationTypes.Find(Application.ApplicationTypeID).ApplicationTypeFees;
+            Application.CreatedByUserID = CreatedByUserID;
+
+            if (!Application.Save())
+            {
+                return null;
+            }
+
+            // Create License:
+            clsLicense NewLicense = new clsLicense();
+
+            NewLicense.ApplicationID = Application.ApplicationID;
+            NewLicense.DriverID = this.DriverID;
+            NewLicense.LicenseClass = this.LicenseClass;
+            NewLicense.IssueDate = DateTime.Now;
+            NewLicense.ExpirationDate = this.ExpirationDate;
+            NewLicense.Notes = this.Notes;
+            NewLicense.PaidFees = 0; // No Fees because its Rplacement;
+            NewLicense.IsActive = true;
+            NewLicense.IssueReason = IssueReason;
+            NewLicense.CreatedByUserID = CreatedByUserID;
+
+            if (!NewLicense.Save())
+            {
+                Application.Delete();
+                return null;
+            }
+
+            // we need to desactivate the old License:
+            DesactivateCurrentLicense();
 
             return NewLicense;
         }
