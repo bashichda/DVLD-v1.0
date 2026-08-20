@@ -100,6 +100,12 @@
     <Compile Include="Applications\ReplaceLostOrDemagedLicense\frmReplaceLostOrDemagedLicense.Designer.cs">
       <DependentUpon>frmReplaceLostOrDemagedLicense.cs</DependentUpon>
     </Compile>
+    <Compile Include="Drivers\frmListDrivers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Drivers\frmListDrivers.Designer.cs">
+      <DependentUpon>frmListDrivers.cs</DependentUpon>
+    </Compile>
     <Compile Include="Global Classes\clsGlobal.cs" />
     <Compile Include="Global Classes\clsUtil.cs" />
     <Compile Include="Global Classes\clsValidation.cs" />
@@ -275,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Applications\ReplaceLostOrDemagedLicense\frmReplaceLostOrDemagedLicense.resx">
       <DependentUpon>frmReplaceLostOrDemagedLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Drivers\frmListDrivers.resx">
+      <DependentUpon>frmListDrivers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Licenses\Local Licenses\Controls\ctrlDriverLicenseInfo.resx">
       <DependentUpon>ctrlDriverLicenseInfo.cs</DependentUpon>
@@ -643,6 +652,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\driver-license_512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drivers_512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
