@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dgvListDrivers = new System.Windows.Forms.DataGridView();
+            this.cmsDrivers = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.showPersonDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.showPersonLicenseHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.cbFilter = new System.Windows.Forms.ComboBox();
@@ -38,12 +41,9 @@
             this.lblRecordsNumber = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
             this.txtFilterValue = new System.Windows.Forms.TextBox();
-            this.cmsDrivers = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.showPersonDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.showPersonLicenseHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListDrivers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.cmsDrivers.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvListDrivers
@@ -59,6 +59,33 @@
             this.dgvListDrivers.ReadOnly = true;
             this.dgvListDrivers.Size = new System.Drawing.Size(1176, 333);
             this.dgvListDrivers.TabIndex = 1;
+            // 
+            // cmsDrivers
+            // 
+            this.cmsDrivers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmsDrivers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showPersonDetailsToolStripMenuItem,
+            this.showPersonLicenseHistoryToolStripMenuItem});
+            this.cmsDrivers.Name = "cmsDrivers";
+            this.cmsDrivers.Size = new System.Drawing.Size(296, 102);
+            // 
+            // showPersonDetailsToolStripMenuItem
+            // 
+            this.showPersonDetailsToolStripMenuItem.Image = global::DVLD_Project_Version_1._0.Properties.Resources.Show_Details;
+            this.showPersonDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showPersonDetailsToolStripMenuItem.Name = "showPersonDetailsToolStripMenuItem";
+            this.showPersonDetailsToolStripMenuItem.Size = new System.Drawing.Size(295, 38);
+            this.showPersonDetailsToolStripMenuItem.Text = "Show Person Details";
+            this.showPersonDetailsToolStripMenuItem.Click += new System.EventHandler(this.showPersonDetailsToolStripMenuItem_Click);
+            // 
+            // showPersonLicenseHistoryToolStripMenuItem
+            // 
+            this.showPersonLicenseHistoryToolStripMenuItem.Image = global::DVLD_Project_Version_1._0.Properties.Resources.person_Histroy;
+            this.showPersonLicenseHistoryToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
+            this.showPersonLicenseHistoryToolStripMenuItem.Size = new System.Drawing.Size(295, 38);
+            this.showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License History";
+            this.showPersonLicenseHistoryToolStripMenuItem.Click += new System.EventHandler(this.showPersonLicenseHistoryToolStripMenuItem_Click);
             // 
             // pictureBox1
             // 
@@ -148,32 +175,6 @@
             this.txtFilterValue.TextChanged += new System.EventHandler(this.txtFilterValue_TextChanged);
             this.txtFilterValue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFilterValue_KeyPress);
             // 
-            // cmsDrivers
-            // 
-            this.cmsDrivers.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmsDrivers.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.showPersonDetailsToolStripMenuItem,
-            this.showPersonLicenseHistoryToolStripMenuItem});
-            this.cmsDrivers.Name = "cmsDrivers";
-            this.cmsDrivers.Size = new System.Drawing.Size(296, 102);
-            // 
-            // showPersonDetailsToolStripMenuItem
-            // 
-            this.showPersonDetailsToolStripMenuItem.Image = global::DVLD_Project_Version_1._0.Properties.Resources.Show_Details;
-            this.showPersonDetailsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showPersonDetailsToolStripMenuItem.Name = "showPersonDetailsToolStripMenuItem";
-            this.showPersonDetailsToolStripMenuItem.Size = new System.Drawing.Size(295, 38);
-            this.showPersonDetailsToolStripMenuItem.Text = "Show Person Details";
-            this.showPersonDetailsToolStripMenuItem.Click += new System.EventHandler(this.showPersonDetailsToolStripMenuItem_Click);
-            // 
-            // showPersonLicenseHistoryToolStripMenuItem
-            // 
-            this.showPersonLicenseHistoryToolStripMenuItem.Image = global::DVLD_Project_Version_1._0.Properties.Resources.person_Histroy;
-            this.showPersonLicenseHistoryToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.showPersonLicenseHistoryToolStripMenuItem.Name = "showPersonLicenseHistoryToolStripMenuItem";
-            this.showPersonLicenseHistoryToolStripMenuItem.Size = new System.Drawing.Size(295, 38);
-            this.showPersonLicenseHistoryToolStripMenuItem.Text = "Show Person License History";
-            // 
             // frmListDrivers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -196,8 +197,8 @@
             this.Text = "List Drivers";
             this.Load += new System.EventHandler(this.frmListDrivers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvListDrivers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.cmsDrivers.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

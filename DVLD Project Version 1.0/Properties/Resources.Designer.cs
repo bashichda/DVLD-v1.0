@@ -433,6 +433,16 @@ namespace DVLD_Project_Version_1._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Licenses_History {
+            get {
+                object obj = ResourceManager.GetObject("Licenses History", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Local {
             get {
                 object obj = ResourceManager.GetObject("Local", resourceCulture);

@@ -1,4 +1,5 @@
 ﻿using DVLD_BusinessLayer;
+using DVLD_Project_Version_1._0.Licenses;
 using DVLD_Project_Version_1._0.Licenses.Local_Licenses;
 using DVLD_Project_Version_1._0.Test;
 using System;
@@ -149,7 +150,13 @@ namespace DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications
 
         private void showPersonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("This Feature is not Implement yet", "Feature", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //MessageBox.Show("This Feature is not Implement yet", "Feature", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            int LocalDrivingLicenseApplicationID = (int)dgvListLocalDrivingLicenseApplications.CurrentRow.Cells[0].Value;
+            clsLocalDrivingLicenseApplication localDrivingLicenseApplication = clsLocalDrivingLicenseApplication.FindByLocalDrivingLicenseApplicationID(LocalDrivingLicenseApplicationID);
+
+            frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory(localDrivingLicenseApplication.ApplicantPersonID);
+            frm.ShowDialog();
+           
         }
 
         private void showLicenseToolStripMenuItem_Click(object sender, EventArgs e)

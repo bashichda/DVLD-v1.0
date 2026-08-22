@@ -116,5 +116,11 @@ namespace DVLD_Project_Version_1._0.Licenses.Controls
             frmShowDriverLicenseInfo frm = new frmShowDriverLicenseInfo(LicenseID);
             frm.ShowDialog();
         }
+
+        public void Clear()
+        {
+            _dtDriverInternationalLicenseHistory.Clear();
+            _dtDriverLocalLicenseHistory.Clear();
+        }
     }
 }

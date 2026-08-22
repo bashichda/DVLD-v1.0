@@ -1,4 +1,5 @@
 ﻿using DVLD_BusinessLayer;
+using DVLD_Project_Version_1._0.Licenses;
 using DVLD_Project_Version_1._0.People;
 using System;
 using System.Collections.Generic;
@@ -128,6 +129,13 @@ namespace DVLD_Project_Version_1._0.Drivers
         private void showPersonDetailsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmShowPersonInfo frm = new frmShowPersonInfo((int)dgvListDrivers.CurrentRow.Cells[1].Value);
+            frm.ShowDialog();
+            frmListDrivers_Load(null, null);
+        }
+
+        private void showPersonLicenseHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory((int)dgvListDrivers.CurrentRow.Cells[1].Value);
             frm.ShowDialog();
             frmListDrivers_Load(null, null);
         }
