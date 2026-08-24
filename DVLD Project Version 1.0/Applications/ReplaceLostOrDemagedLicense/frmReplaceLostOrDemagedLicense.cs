@@ -1,5 +1,6 @@
 ﻿using DVLD_BusinessLayer;
 using DVLD_Project_Version_1._0.Global_Classes;
+using DVLD_Project_Version_1._0.Licenses;
 using DVLD_Project_Version_1._0.Licenses.Local_Licenses;
 using System;
 using System.Windows.Forms;
@@ -125,6 +126,12 @@ namespace DVLD_Project_Version_1._0.Applications.ReplaceLostOrDemagedLicense
         private void btnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void LLShowLicensesHistory_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory(ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.DriverInfo.PersonID);
+            frm.ShowDialog();
         }
     }
 }

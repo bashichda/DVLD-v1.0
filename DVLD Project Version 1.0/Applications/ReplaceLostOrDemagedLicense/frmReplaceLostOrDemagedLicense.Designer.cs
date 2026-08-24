@@ -340,6 +340,7 @@
             this.LLShowLicensesHistory.TabIndex = 4;
             this.LLShowLicensesHistory.TabStop = true;
             this.LLShowLicensesHistory.Text = "Show Licenses History";
+            this.LLShowLicensesHistory.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LLShowLicensesHistory_LinkClicked);
             // 
             // LLShowNewLicneseInfo
             // 

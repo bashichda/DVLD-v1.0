@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace DVLD_Project_Version_1._0.Licenses
@@ -29,7 +22,7 @@ namespace DVLD_Project_Version_1._0.Licenses
         {
             if (_PersonID != -1)
             {
-                ctrlPersonCardWithFilter1.LoadPersonInf(_PersonID);
+                ctrlPersonCardWithFilter1.LoadPersonInfo(_PersonID);
                 ctrlPersonCardWithFilter1.FilterEnabled = false;
                 ctrlDriverLicenses1.LoadInfoByPersonID(_PersonID);
             }

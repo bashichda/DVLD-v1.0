@@ -200,7 +200,7 @@ namespace DVLD_Project_Version_1._0.Users
             txtPassword.Text = _User.Password;
             txtConfirmPassword.Text = _User.Password;
             chkIsActive.Checked = _User.IsActive;
-            ctrlPersonCardWithFilter1.LoadPersonInf(_User.PersonID);
+            ctrlPersonCardWithFilter1.LoadPersonInfo(_User.PersonID);
         }
 
         private void frmAddUpdateUser_Load(object sender, EventArgs e)

@@ -79,7 +79,7 @@ namespace DVLD_Project_Version_1._0.People.Controls
             }
         }
 
-        public void LoadPersonInf(int PersonID)
+        public void LoadPersonInfo(int PersonID)
         {
             cbFilter.SelectedIndex = 1;
             txtFilterValue.Text = PersonID.ToString();

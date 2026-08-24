@@ -1,5 +1,6 @@
 ﻿using DVLD_BusinessLayer;
 using DVLD_Project_Version_1._0.Global_Classes;
+using DVLD_Project_Version_1._0.Licenses;
 using DVLD_Project_Version_1._0.Licenses.Local_Licenses;
 using System;
 using System.Windows.Forms;
@@ -105,6 +106,12 @@ namespace DVLD_Project_Version_1._0.Applications.Renew_Local_License
         private void frmRenewLocalDrivingLicenseApplication_Activated(object sender, EventArgs e)
         {
             ctrlDriverLicenseInfoWithFilter1.txtFilterValueFocus();
+        }
+
+        private void llShowLicenseHistory_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmShowPersonLicenseHistory frm = new frmShowPersonLicenseHistory(ctrlDriverLicenseInfoWithFilter1.SelectedLicenseInfo.DriverInfo.PersonID);
+            frm.ShowDialog();
         }
     }
 }

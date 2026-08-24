@@ -466,12 +466,14 @@
             // llShowLicenseHistory
             // 
             this.llShowLicenseHistory.AutoSize = true;
+            this.llShowLicenseHistory.Enabled = false;
             this.llShowLicenseHistory.Location = new System.Drawing.Point(15, 883);
             this.llShowLicenseHistory.Name = "llShowLicenseHistory";
             this.llShowLicenseHistory.Size = new System.Drawing.Size(161, 20);
             this.llShowLicenseHistory.TabIndex = 3;
             this.llShowLicenseHistory.TabStop = true;
             this.llShowLicenseHistory.Text = "Show License History";
+            this.llShowLicenseHistory.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llShowLicenseHistory_LinkClicked);
             // 
             // llShowNewLicensesInfo
             // 
