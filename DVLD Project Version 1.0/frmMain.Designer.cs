@@ -243,6 +243,7 @@
             this.detainLicesnseToolStripMenuItem.Name = "detainLicesnseToolStripMenuItem";
             this.detainLicesnseToolStripMenuItem.Size = new System.Drawing.Size(335, 38);
             this.detainLicesnseToolStripMenuItem.Text = "Detain License";
+            this.detainLicesnseToolStripMenuItem.Click += new System.EventHandler(this.detainLicesnseToolStripMenuItem_Click);
             // 
             // releaseDetainedLicesnseToolStripMenuItem
             // 

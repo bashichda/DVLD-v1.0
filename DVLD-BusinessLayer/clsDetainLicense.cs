@@ -1,5 +1,6 @@
 ﻿using DVLD_DataAccessLayer;
 using System;
+using System.Data;
 
 namespace DVLD_BusinessLayer
 {
@@ -129,6 +130,11 @@ namespace DVLD_BusinessLayer
         public static bool IsLicenseDetained(int LicenseID)
         {
             return clsDetainedLicenseData.IsLicenseDetained(LicenseID);
+        }
+
+        public static DataTable GetAllDetainedLicenses()
+        {
+            return clsDetainedLicenseData.GetAllDetainLicenses();
         }
     }
 }

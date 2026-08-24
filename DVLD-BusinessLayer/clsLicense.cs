@@ -32,7 +32,14 @@ namespace DVLD_BusinessLayer
             }
         }
 
-        // Detain Licnese Info... ==> you Should 
+        public clsDetainLicense DetainedInfo { get; set; }
+        public bool IsDetained
+        {
+            get
+            {
+                return clsDetainLicense.IsLicenseDetained(this.LicenseID);
+            }
+        }
 
         public clsLicense()
         {
@@ -67,6 +74,7 @@ namespace DVLD_BusinessLayer
             this.IsActive = IsActive;
             this.IssueReason = IssueReason;
             this.CreatedByUserID = CreatedByUserID;
+            this.DetainedInfo = clsDetainLicense.FindByLicenseID(this.LicenseID);
             Mode = enMode.Update;
         }
 
@@ -267,6 +275,23 @@ namespace DVLD_BusinessLayer
             DesactivateCurrentLicense();
 
             return NewLicense;
+        }
+
+        public int Detain(decimal FineFees,int CreatedByUserID)
+        {
+            clsDetainLicense detainLicense = new clsDetainLicense();
+
+            detainLicense.LicenseID = this.LicenseID;
+            detainLicense.DetainDate = DateTime.Now;
+            detainLicense.FineFees = FineFees;
+            detainLicense.CreatedByUserID = CreatedByUserID;
+
+            if (!detainLicense.Save())
+            {
+                return -1;
+            }
+
+            return detainLicense.DetainID;
         }
     }
 }

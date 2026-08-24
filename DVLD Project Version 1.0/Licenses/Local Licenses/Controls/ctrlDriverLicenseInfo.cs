@@ -57,8 +57,7 @@ namespace DVLD_Project_Version_1._0.Licenses.Controls
             lblDateOfBirth.Text = _License.DriverInfo.PersonInfo.DateOfBirth.ToShortDateString();
             lblDriverID.Text = _License.DriverID.ToString();
             lblExpirationDate.Text = _License.ExpirationDate.ToShortDateString();
-            // TODO : Change to (_License.IsDetained? "Yes" : "No";) after implementing clsDetainedLicense
-            lblIsDetained.Text = "No";
+            lblIsDetained.Text = _License.IsDetained ? "Yes" : "No";
             _LoadPersonImage();
             
         }

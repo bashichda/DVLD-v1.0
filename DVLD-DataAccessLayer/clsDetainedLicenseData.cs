@@ -110,7 +110,7 @@ namespace DVLD_DataAccessLayer
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
 
-            string query = @"Select * From DetainedLicenses_View;";
+            string query = @"Select * From DetainedLicenses_View Order By IsReleased, DetainID;";
 
             SqlCommand command = new SqlCommand(query, connection);
 
