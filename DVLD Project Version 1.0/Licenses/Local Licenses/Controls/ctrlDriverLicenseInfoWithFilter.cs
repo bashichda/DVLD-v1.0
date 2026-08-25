@@ -70,6 +70,11 @@ namespace DVLD_Project_Version_1._0.Licenses.Local_Licenses.Controls
             }
         }
 
+        public void RefreshLicenseInfo()
+        {
+            ctrlDriverLicenseInfo1.LoadInfo(this._LicenseID);
+        }
+
         private void BtnFind_Click(object sender, EventArgs e)
         {
             if (!this.ValidateChildren())

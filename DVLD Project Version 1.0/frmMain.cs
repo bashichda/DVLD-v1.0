@@ -121,5 +121,12 @@ namespace DVLD_Project_Version_1._0
             frmReleaseDetainedLicense frm = new frmReleaseDetainedLicense();
             frm.ShowDialog();
         }
+
+        private void manageDetainedLicensesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListDetainedLicense frm = new frmListDetainedLicense();
+
+            frm.ShowDialog();
+        }
     }
 }

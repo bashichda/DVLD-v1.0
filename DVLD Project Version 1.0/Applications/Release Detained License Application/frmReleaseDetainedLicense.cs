@@ -92,6 +92,7 @@ namespace DVLD_Project_Version_1._0.Applications.Release_Detained_License_Applic
             }
 
             MessageBox.Show("Detained License Released Successfully.", "Released License", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ctrlDriverLicenseInfoWithFilter1.RefreshLicenseInfo();
 
             btnRelease.Enabled = false;
             ctrlDriverLicenseInfoWithFilter1.FilterEnabled = false;

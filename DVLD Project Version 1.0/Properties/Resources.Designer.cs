@@ -303,6 +303,26 @@ namespace DVLD_Project_Version_1._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Detain_512 {
+            get {
+                object obj = ResourceManager.GetObject("Detain 512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Detain_64 {
+            get {
+                object obj = ResourceManager.GetObject("Detain 64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Detain_License {
             get {
                 object obj = ResourceManager.GetObject("Detain License", resourceCulture);
@@ -756,6 +776,16 @@ namespace DVLD_Project_Version_1._0.Properties {
         internal static System.Drawing.Bitmap Release_Detained_License_321 {
             get {
                 object obj = ResourceManager.GetObject("Release Detained License 321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Release_Detained_License_64 {
+            get {
+                object obj = ResourceManager.GetObject("Release Detained License 64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -91,6 +91,7 @@ namespace DVLD_Project_Version_1._0.Applications.Detained_License
 
             lblDetainID.Text = _DetainID.ToString();
             MessageBox.Show("License Detained Successfully With ID = " + _DetainID.ToString(), "License Detained", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            ctrlDriverLicenseInfoWithFilter1.RefreshLicenseInfo();
 
             ctrlDriverLicenseInfoWithFilter1.FilterEnabled = false;
             btnDetain.Enabled = false;
