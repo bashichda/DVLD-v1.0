@@ -66,12 +66,14 @@ namespace DVLD_Project_Version_1._0.Applications.Release_Detained_License_Applic
         {
             frmDetainLicense frm = new frmDetainLicense();
             frm.ShowDialog();
+            frmListDetainedLicense_Load(null, null);
         }
 
         private void btnRelease_Click(object sender, EventArgs e)
         {
             frmReleaseDetainedLicense frm = new frmReleaseDetainedLicense();
             frm.ShowDialog();
+            frmListDetainedLicense_Load(null, null);
         }
 
         private void cbFilterBy_SelectedIndexChanged(object sender, EventArgs e)
@@ -203,11 +205,20 @@ namespace DVLD_Project_Version_1._0.Applications.Release_Detained_License_Applic
 
             frmReleaseDetainedLicense frm = new frmReleaseDetainedLicense(LicenseID);
             frm.ShowDialog();
+            frmListDetainedLicense_Load(null, null);
         }
 
         private void cmsDetainedLicenses_Opening(object sender, CancelEventArgs e)
         {
             releaseDetainedLicenseToolStripMenuItem.Enabled = !(bool)dgvListDetainedLicenses.CurrentRow.Cells[3].Value;
+        }
+
+        private void txtFilterValue_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (cbFilterBy.Text == "Detain ID" || cbFilterBy.Text == "Release Application ID")
+            {
+                e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
+            }
         }
     }
 }
