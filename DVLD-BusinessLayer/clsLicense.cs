@@ -293,5 +293,30 @@ namespace DVLD_BusinessLayer
 
             return detainLicense.DetainID;
         }
+
+        public bool ReleaseDetainedLicense(int ReleaseByUserID,ref int ApplicationID)
+        {
+            // Create Application:
+
+            clsApplications Application = new clsApplications();
+
+            Application.ApplicantPersonID = this.DriverInfo.PersonID;
+            Application.ApplicationDate = DateTime.Now;
+            Application.ApplicationTypeID = (int)clsApplications.enApplicationType.ReleaseDetainedDrivingLicense;
+            Application.ApplicationStatus = clsApplications.enApplicationStatus.Completed;
+            Application.LastStatusDate = DateTime.Now;
+            Application.PaidFees = clsApplicationTypes.Find((int)clsApplications.enApplicationType.ReleaseDetainedDrivingLicense).ApplicationTypeFees;
+            Application.CreatedByUserID = ReleaseByUserID;
+
+            if (!Application.Save())
+            {
+                ApplicationID = -1;
+                return false;
+            }
+
+            ApplicationID = Application.ApplicationID;
+
+            return this.DetainedInfo.ReleasDetainLicense(ReleaseByUserID, Application.ApplicationID);
+        }
     }
 }
