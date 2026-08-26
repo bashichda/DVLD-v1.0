@@ -1,5 +1,6 @@
 ﻿using DVLD_Project_Version_1._0.Application_Types;
 using DVLD_Project_Version_1._0.Applications.Detained_License;
+using DVLD_Project_Version_1._0.Applications.International_License;
 using DVLD_Project_Version_1._0.Applications.LocalDrivingLicenseApplications;
 using DVLD_Project_Version_1._0.Applications.Release_Detained_License_Application;
 using DVLD_Project_Version_1._0.Applications.Renew_Local_License;
@@ -133,6 +134,12 @@ namespace DVLD_Project_Version_1._0
         private void internationalLicenseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmInternationalLicense frm = new frmInternationalLicense();
+            frm.ShowDialog();
+        }
+
+        private void internatinalLicenseApplicationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListInternationalLicenses frm = new frmListInternationalLicenses();
             frm.ShowDialog();
         }
     }

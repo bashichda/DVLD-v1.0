@@ -138,7 +138,7 @@ namespace DVLD_DataAccessLayer
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
 
             string query = @"Update InternationalLicenses
-                            Set IsActive 0
+                            Set IsActive = 0
                             Where DriverID = @DriverID;
                             
                             Insert Into InternationalLicenses(ApplicationID,DriverID,IssuedUsingLocalLicenseID,IssueDate,ExpirationDate,IsActive,

@@ -131,7 +131,7 @@ namespace DVLD_DataAccessLayer
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
 
-            string query = @"Insert Into Drviers(PersonID,CreatedByUserID,CreatedDate)
+            string query = @"Insert Into Drivers(PersonID,CreatedByUserID,CreatedDate)
                             Values(@PersonID,@CreatedByUserID,@CreatedDate);
                             
                             Select Scope_Identity();";

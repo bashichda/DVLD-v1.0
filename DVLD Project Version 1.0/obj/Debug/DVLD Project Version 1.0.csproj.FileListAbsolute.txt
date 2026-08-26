@@ -55,3 +55,4 @@ C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Licenses.International_License.frmInternationalLicense.resources
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Licenses.International_License.Control.ctrlDriverInternationalLicenseInfo.resources
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Licenses.International_License.frmDriverShowInternationalLicenseInfo.resources
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Applications.International_License.frmListInternationalLicenses.resources

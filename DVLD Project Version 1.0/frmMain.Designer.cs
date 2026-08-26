@@ -211,6 +211,7 @@
             this.internatinalLicenseApplicationsToolStripMenuItem.Name = "internatinalLicenseApplicationsToolStripMenuItem";
             this.internatinalLicenseApplicationsToolStripMenuItem.Size = new System.Drawing.Size(401, 38);
             this.internatinalLicenseApplicationsToolStripMenuItem.Text = "Internatinal License Applications";
+            this.internatinalLicenseApplicationsToolStripMenuItem.Click += new System.EventHandler(this.internatinalLicenseApplicationsToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
