@@ -33,7 +33,7 @@ namespace DVLD_BusinessLayer
             Mode = enMode.AddNew;
         }
 
-        public clsInternationalLicense(int ApplicationID,int ApplicantPersonID,DateTime ApplicationDate,enApplicationStatus ApplicationStatus,
+        private clsInternationalLicense(int ApplicationID,int ApplicantPersonID,DateTime ApplicationDate,enApplicationStatus ApplicationStatus,
             DateTime LastStatusDate,decimal PaidFees,int CreatedByUser,int InternationalLicenseID,int DriverID,int IssuedUsingLocalLicenseID,
             DateTime IssueDate,DateTime ExpirationDate,bool IsActive)
         {

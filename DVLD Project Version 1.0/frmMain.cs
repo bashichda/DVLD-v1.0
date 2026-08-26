@@ -6,6 +6,7 @@ using DVLD_Project_Version_1._0.Applications.Renew_Local_License;
 using DVLD_Project_Version_1._0.Applications.ReplaceLostOrDemagedLicense;
 using DVLD_Project_Version_1._0.Drivers;
 using DVLD_Project_Version_1._0.Global_Classes;
+using DVLD_Project_Version_1._0.Licenses.International_License;
 using DVLD_Project_Version_1._0.Test_Types;
 using DVLD_Project_Version_1._0.Users;
 using System;
@@ -126,6 +127,12 @@ namespace DVLD_Project_Version_1._0
         {
             frmListDetainedLicense frm = new frmListDetainedLicense();
 
+            frm.ShowDialog();
+        }
+
+        private void internationalLicenseToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmInternationalLicense frm = new frmInternationalLicense();
             frm.ShowDialog();
         }
     }

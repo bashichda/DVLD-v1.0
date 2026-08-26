@@ -52,3 +52,6 @@ C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Applications.Detained_License.frmDetainLicense.resources
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Applications.Release_Detained_License_Application.frmReleaseDetainedLicense.resources
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Applications.Release_Detained_License_Application.frmListDetainedLicense.resources
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Licenses.International_License.frmInternationalLicense.resources
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Licenses.International_License.Control.ctrlDriverInternationalLicenseInfo.resources
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD Project Version 1.0\obj\Debug\DVLD_Project_Version_1._0.Licenses.International_License.frmDriverShowInternationalLicenseInfo.resources

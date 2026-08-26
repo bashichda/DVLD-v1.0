@@ -1,4 +1,5 @@
 ﻿using DVLD_BusinessLayer;
+using DVLD_Project_Version_1._0.Licenses.International_License;
 using DVLD_Project_Version_1._0.Licenses.Local_Licenses;
 using System;
 using System.Data;
@@ -49,7 +50,7 @@ namespace DVLD_Project_Version_1._0.Licenses.Controls
 
         private void _LoadInternationalLicenseInfo()
         {
-            //_dtDriverInternationalLicenseHistory = clsDriver.GetInternationalLicense(_DriverID);
+            _dtDriverInternationalLicenseHistory = clsDriver.GetInternationalLicenses(_DriverID);
 
             dgvInternationalLicensesHitory.DataSource = _dtDriverInternationalLicenseHistory;
             lblInternationalRecordsCount.Text = dgvInternationalLicensesHitory.Rows.Count.ToString();
@@ -121,6 +122,13 @@ namespace DVLD_Project_Version_1._0.Licenses.Controls
         {
             _dtDriverInternationalLicenseHistory.Clear();
             _dtDriverLocalLicenseHistory.Clear();
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            int InternationalLicenseID = (int)dgvInternationalLicensesHitory.CurrentRow.Cells[0].Value;
+            frmDriverShowInternationalLicenseInfo frm = new frmDriverShowInternationalLicenseInfo(InternationalLicenseID);
+            frm.ShowDialog();
         }
     }
 }
