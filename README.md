@@ -287,11 +287,35 @@ All screens open as `ShowDialog()` from the main menu — each module is self-co
 
 ---
 
+## 🔐 Credential Persistence — Windows Registry
+
+The `clsGlobal` class includes a **Remember Me** feature that stores login credentials in the Windows Registry instead of a plain file:
+
+```csharp
+// Save credentials
+Registry.SetValue(@"HKEY_CURRENT_USER\SOFTWARE\DVLD", "Username", username);
+Registry.SetValue(@"HKEY_CURRENT_USER\SOFTWARE\DVLD", "Password", password);
+
+// Load credentials
+string user = Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\DVLD", "UserName", null) as string;
+string pass = Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\DVLD", "Password", null) as string;
+```
+
+| Method | Description |
+|---|---|
+| `RememberUsernameAndPassword(user, pass)` | Writes credentials to `HKEY_CURRENT_USER\SOFTWARE\DVLD` |
+| `GetStoredCredential(ref user, ref pass)` | Reads stored credentials back on app startup |
+
+> ⚠️ **Security note:** Credentials are stored as plain strings in the registry. For production, consider encrypting using `ProtectedData` (DPAPI) before writing.
+
+---
+
 ## 🛠️ Technologies Used
 
 - **Language:** C# (.NET Framework 4.7.2)
 - **UI:** Windows Forms — Forms, UserControls, MDI, MenuStrip, DataGridView, TabControl, ContextMenuStrip, ErrorProvider, LinkLabel
 - **Database:** SQL Server (`System.Data.SqlClient`) — parameterized queries
+- **Storage:** Windows Registry (`Microsoft.Win32`) — credential persistence
 - **Architecture:** 3-Layer / N-Tier — 3 separate `.csproj` DLL projects
 - **Pattern:** Static Factory, Private Constructor, Mode-based Save (Add/Update), Event-driven UserControls, Global session object
 
@@ -300,7 +324,8 @@ All screens open as `ShowDialog()` from the main menu — each module is self-co
 ## 🔮 Possible Improvements
 
 - [ ] Move connection string to `App.config` and add to `.gitignore`
-- [ ] Add **password hashing** (currently stored plain text)
+- [ ] Hash or encrypt stored credentials — use `ProtectedData` (DPAPI) instead of plain registry strings
+- [ ] Add **password hashing** for DB-stored passwords (currently plain text)
 - [ ] Add **audit log** — track who did what and when
 - [ ] Add **reports** — generate PDF license stats, application summaries
 - [ ] Add **async/await** for DB calls to prevent UI freezing
