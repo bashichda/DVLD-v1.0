@@ -37,7 +37,8 @@ namespace DVLD_DataAccessLayer
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
+                clsEventLog.LogException(ex);
+
             }
             finally
             {
@@ -74,7 +75,8 @@ namespace DVLD_DataAccessLayer
             }
             catch (Exception ex)
             {
-                System.Diagnostics.Debug.WriteLine(ex.Message);
+                clsEventLog.LogException(ex);
+
             }
             finally
             {
@@ -109,7 +111,8 @@ namespace DVLD_DataAccessLayer
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message);
+                clsEventLog.LogException(ex);
+
             }
             finally
             {
