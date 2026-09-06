@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DVLD_DataAccessLayer
 {
@@ -29,8 +25,9 @@ namespace DVLD_DataAccessLayer
             }
             catch (Exception exception)
             {
-                clsEventLog.LogException(exception);
+                Debug.WriteLine($"EventLog failed: {exception.Message}");
             }
+        }
         }
     }
 }
