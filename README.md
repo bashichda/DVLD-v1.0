@@ -287,6 +287,39 @@ All screens open as `ShowDialog()` from the main menu — each module is self-co
 
 ---
 
+## 📋 Exception Logging — Windows Event Log
+
+All `try/catch` blocks across all 3 layers log exceptions to the **Windows Event Log** under a custom source `"DVLD"` — giving you a persistent, system-level audit trail of every runtime error without needing an external logging framework.
+
+```csharp
+catch (Exception ex)
+{
+    if (!EventLog.SourceExists("DVLD"))
+        EventLog.CreateEventSource("DVLD", "Application");
+
+    EventLog.WriteEntry("DVLD", ex.Message, EventLogEntryType.Error);
+    // ... handle error
+}
+```
+
+**Coverage — every layer logs:**
+
+| Layer | What gets logged |
+|---|---|
+| `clsGlobal.cs` (Presentation) | Registry read/write failures |
+| `clsPersonData.cs` (DAL) | SQL failures on person queries |
+| `clsLicenseData.cs` (DAL) | SQL failures on license queries |
+| All other `*Data.cs` files | Any DB exception in any CRUD operation |
+
+**How to view logs:**
+1. Press `Win + R` → type `eventvwr.msc` → Enter
+2. Navigate to **Windows Logs → Application**
+3. Filter by Source: `DVLD`
+
+> ⚠️ `EventLog.CreateEventSource()` requires **Administrator privileges** on first run. After the source is created once, normal user rights are sufficient for writing.
+
+---
+
 ## 🔐 Credential Persistence — Windows Registry
 
 The `clsGlobal` class includes a **Remember Me** feature that stores login credentials in the Windows Registry instead of a plain file:
@@ -316,6 +349,7 @@ string pass = Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\DVLD", "Password", 
 - **UI:** Windows Forms — Forms, UserControls, MDI, MenuStrip, DataGridView, TabControl, ContextMenuStrip, ErrorProvider, LinkLabel
 - **Database:** SQL Server (`System.Data.SqlClient`) — parameterized queries
 - **Storage:** Windows Registry (`Microsoft.Win32`) — credential persistence
+- **Logging:** Windows Event Log (`System.Diagnostics.EventLog`) — exception audit trail
 - **Architecture:** 3-Layer / N-Tier — 3 separate `.csproj` DLL projects
 - **Pattern:** Static Factory, Private Constructor, Mode-based Save (Add/Update), Event-driven UserControls, Global session object
 
@@ -326,7 +360,8 @@ string pass = Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\DVLD", "Password", 
 - [ ] Move connection string to `App.config` and add to `.gitignore`
 - [ ] Hash or encrypt stored credentials — use `ProtectedData` (DPAPI) instead of plain registry strings
 - [ ] Add **password hashing** for DB-stored passwords (currently plain text)
-- [ ] Add **audit log** — track who did what and when
+- [ ] Add **audit log** — track who did what and when (event log covers errors; extend to user actions)
+- [ ] Wrap `EventLog.CreateEventSource()` in app installer to avoid needing admin on first run
 - [ ] Add **reports** — generate PDF license stats, application summaries
 - [ ] Add **async/await** for DB calls to prevent UI freezing
 - [ ] Replace `system()` calls and make fully cross-platform
