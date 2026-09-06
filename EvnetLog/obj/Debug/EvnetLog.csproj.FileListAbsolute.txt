@@ -1,2 +1,0 @@
-C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\EvnetLog\obj\Debug\EvnetLog.csproj.AssemblyReference.cache
-C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\EvnetLog\obj\Debug\EvnetLog.csproj.CoreCompileInputs.cache
