@@ -1,0 +1,6 @@
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\EvnetLog\obj\Debug\DVLD-Common.csproj.AssemblyReference.cache
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\EvnetLog\obj\Debug\DVLD-Common.csproj.CoreCompileInputs.cache
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\EvnetLog\bin\Debug\EvnetLog.dll
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\EvnetLog\bin\Debug\EvnetLog.pdb
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\EvnetLog\obj\Debug\EvnetLog.dll
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\EvnetLog\obj\Debug\EvnetLog.pdb

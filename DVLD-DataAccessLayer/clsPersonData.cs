@@ -1,4 +1,4 @@
-﻿using System;
+﻿using System; using DVLD_Common;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -20,7 +20,7 @@ namespace DVLD_DataAccessLayer
 
             SqlConnection connection = new SqlConnection(clsDataAccessSettings.connectionString);
 
-            string query = @"Select * From People where PersonID = @PersonID;";
+            string query = @"Select * From Peoples where PersonID = @PersonID;";
 
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@PersonID", PersonID);

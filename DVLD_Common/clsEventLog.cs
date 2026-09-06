@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace DVLD_DataAccessLayer
+
+namespace DVLD_Common
 {
     public class clsEventLog
     {
@@ -27,7 +28,6 @@ namespace DVLD_DataAccessLayer
             {
                 Debug.WriteLine($"EventLog failed: {exception.Message}");
             }
-        }
         }
     }
 }

@@ -4,3 +4,6 @@ C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD-DataAccessLayer\ob
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD-DataAccessLayer\obj\Debug\DVLD-DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD-DataAccessLayer\obj\Debug\DVLD-DataAccessLayer.dll
 C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD-DataAccessLayer\obj\Debug\DVLD-DataAccessLayer.pdb
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD-DataAccessLayer\bin\Debug\DVLD_Common.dll
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD-DataAccessLayer\bin\Debug\DVLD_Common.pdb
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD-DataAccessLayer\obj\Debug\DVLD-Dat.04596E65.Up2Date

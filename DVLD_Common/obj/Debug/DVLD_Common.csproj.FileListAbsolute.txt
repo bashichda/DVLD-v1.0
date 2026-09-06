@@ -1,0 +1,6 @@
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD_Common\obj\Debug\DVLD_Common.csproj.AssemblyReference.cache
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD_Common\obj\Debug\DVLD_Common.csproj.CoreCompileInputs.cache
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD_Common\bin\Debug\DVLD_Common.dll
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD_Common\bin\Debug\DVLD_Common.pdb
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD_Common\obj\Debug\DVLD_Common.dll
+C:\Users\Bashichda\source\repos\DVLD Project Version 1.0\DVLD_Common\obj\Debug\DVLD_Common.pdb

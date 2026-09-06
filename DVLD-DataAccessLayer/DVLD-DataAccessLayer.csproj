@@ -46,7 +46,6 @@
     <Compile Include="clsCountryData.cs" />
     <Compile Include="clsDetainedLicenseData.cs" />
     <Compile Include="clsDriverData.cs" />
-    <Compile Include="clsEventLog.cs" />
     <Compile Include="clsInternationalLicensesData.cs" />
     <Compile Include="clsLicenseClassData.cs" />
     <Compile Include="clsLicenseData.cs" />
@@ -58,6 +57,12 @@
     <Compile Include="clsTestTypesData.cs" />
     <Compile Include="clsUserData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DVLD_Common\DVLD_Common.csproj">
+      <Project>{a4a4e792-0fd9-4561-9b93-dee2590babd7}</Project>
+      <Name>DVLD_Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

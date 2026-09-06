@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 namespace DVLD_Project_Version_1._0.Properties {
-    using System;
+    using System; using DVLD_Common;
     
     
     /// <summary>

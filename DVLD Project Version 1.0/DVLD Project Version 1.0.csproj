@@ -523,6 +523,10 @@
       <Project>{5ece151c-429a-4b72-905f-275108d8827c}</Project>
       <Name>DVLD-BusinessLayer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DVLD_Common\DVLD_Common.csproj">
+      <Project>{a4a4e792-0fd9-4561-9b93-dee2590babd7}</Project>
+      <Name>DVLD_Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Show Details.png" />
