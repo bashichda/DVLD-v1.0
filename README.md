@@ -9,7 +9,7 @@
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen?style=flat-square)
 ![License](https://img.shields.io/badge/License-MIT-yellow?style=flat-square)
 
-A full-scale **Driver and Vehicle Licensing Department** desktop application built with C# Windows Forms and SQL Server. Manages the complete lifecycle of driving licenses — from person registration and test scheduling, through license issuance, renewal, detention, and international licensing — all backed by a proper **3-layer (N-Tier) architecture** across three separate Visual Studio projects.
+A full-scale **Driver and Vehicle Licensing Department** desktop application built with C# Windows Forms and SQL Server. Manages the complete lifecycle of driving licenses — from person registration and test scheduling, through license issuance, renewal, detention, and international licensing — all backed by a proper **3-layer (N-Tier) architecture** across **four** separate Visual Studio projects.
 
 ---
 
@@ -82,10 +82,13 @@ A full-scale **Driver and Vehicle Licensing Department** desktop application bui
 
 ---
 
-## 🗂️ Solution Structure (3 Projects)
+## 🗂️ Solution Structure (4 Projects)
 
 ```
 DVLD Project Version 1.0.sln
+│
+├── DVLD_Common/                       [Shared Layer — Utilities]
+│   └── clsEventLog.cs                 # Centralized exception logger (Windows Event Log)
 │
 ├── DVLD Project Version 1.0/          [Presentation Layer — WinForms]
 │   ├── frmMain.cs                     # MDI main window + menu navigation
@@ -273,7 +276,10 @@ One of the strongest design decisions in this project — reusable UserControls 
    ```
    > ⚠️ Never commit this file with real credentials. Add it to `.gitignore` or use `App.config`.
 
-3. Open `DVLD Project Version 1.0.sln` in Visual Studio
+3. Open `DVLD Project Version 1.0.sln
+│
+├── DVLD_Common/                       [Shared Layer — Utilities]
+│   └── clsEventLog.cs                 # Centralized exception logger (Windows Event Log)` in Visual Studio
 4. Set **DVLD Project Version 1.0** as the startup project
 5. Press `Ctrl + F5`
 
