@@ -269,7 +269,7 @@ One of the strongest design decisions in this project — reusable UserControls 
 ### Setup
 
 1. Restore or create the DVLD SQL Server database
-2. Update the connection string in `DVLD-DataAccessLayer/clsDataAccessSettings.cs`:
+2. Copy `App.config.example` to `App.config` in the Presentation Layer project and fill in your credentials:
    ```csharp
    public static string connectionString =
        "Server=YOUR_SERVER;Database=DVLD;User Id=YOUR_USER;Password=YOUR_PASSWORD;";
@@ -354,6 +354,7 @@ string pass = Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\DVLD", "Password", 
 - **Language:** C# (.NET Framework 4.7.2)
 - **UI:** Windows Forms — Forms, UserControls, MDI, MenuStrip, DataGridView, TabControl, ContextMenuStrip, ErrorProvider, LinkLabel
 - **Database:** SQL Server (`System.Data.SqlClient`) — parameterized queries
+- **Config:** `App.config` + `ConfigurationManager` — connection string outside source code
 - **Storage:** Windows Registry (`Microsoft.Win32`) — credential persistence
 - **Logging:** Windows Event Log (`System.Diagnostics.EventLog`) — exception audit trail
 - **Architecture:** 3-Layer / N-Tier — 3 separate `.csproj` DLL projects
@@ -363,7 +364,7 @@ string pass = Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\DVLD", "Password", 
 
 ## 🔮 Possible Improvements
 
-- [ ] Move connection string to `App.config` and add to `.gitignore`
+- [ ] Replace plain `sa` credentials with a dedicated SQL Server user with minimal permissions
 - [ ] Hash or encrypt stored credentials — use `ProtectedData` (DPAPI) instead of plain registry strings
 - [ ] Add **password hashing** for DB-stored passwords (currently plain text)
 - [ ] Add **audit log** — track who did what and when (event log covers errors; extend to user actions)
