@@ -197,8 +197,8 @@ namespace DVLD_Project_Version_1._0.Users
             lblMode.Text = "Update User";
             lblUserID.Text = _User.UserID.ToString();
             txtUserName.Text = _User.UserName;
-            txtPassword.Text = _User.Password;
-            txtConfirmPassword.Text = _User.Password;
+            txtPassword.Text = "";
+            txtConfirmPassword.Text = "";
             chkIsActive.Checked = _User.IsActive;
             ctrlPersonCardWithFilter1.LoadPersonInfo(_User.PersonID);
         }
