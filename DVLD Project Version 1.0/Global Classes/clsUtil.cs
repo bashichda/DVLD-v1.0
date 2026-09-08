@@ -1,16 +1,23 @@
-﻿using System; using DVLD_Common;
-using System.Collections.Generic;
+﻿using System;
 using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace DVLD_BusinessLayer
 {
     public class clsUtil
     {
+
+        public static string ComputeHash(string input)
+        {
+            using (SHA256 sha256 = SHA256.Create())
+            {
+                byte[] hashBytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(input));
+
+                return BitConverter.ToString(hashBytes).Replace("-", "").ToLower();
+            }
+        }
 
         public static string GenerateGUID()
         {

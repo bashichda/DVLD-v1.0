@@ -224,7 +224,7 @@ namespace DVLD_Project_Version_1._0.Users
 
             _User.PersonID = ctrlPersonCardWithFilter1.PersonID;
             _User.UserName = txtUserName.Text.Trim();
-            _User.Password = txtPassword.Text.Trim();
+            _User.Password = clsUtil.ComputeHash(txtPassword.Text.Trim());
             _User.IsActive = chkIsActive.Checked;
 
             if (_User.Save())

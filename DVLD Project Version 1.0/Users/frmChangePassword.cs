@@ -67,7 +67,7 @@ namespace DVLD_Project_Version_1._0.Users
                 errorProvider1.SetError(txtCurrentPassword, null);
             }
 
-            if (txtCurrentPassword.Text.Trim() != _User.Password)
+            if (clsUtil.ComputeHash(txtCurrentPassword.Text.Trim()) != _User.Password)
             {
                 e.Cancel = true;
                 errorProvider1.SetError(txtCurrentPassword, "Current Password is Wrong!");
@@ -91,7 +91,7 @@ namespace DVLD_Project_Version_1._0.Users
                 errorProvider1.SetError(txtNewPassword, null);
             }
 
-            if (txtNewPassword.Text.Trim() == txtCurrentPassword.Text.Trim())
+            if (clsUtil.ComputeHash(txtNewPassword.Text.Trim()) == clsUtil.ComputeHash(txtCurrentPassword.Text.Trim()))
             {
                 e.Cancel = true;
                 errorProvider1.SetError(txtNewPassword, "It is match the Current Password Try another Password!");
@@ -123,7 +123,7 @@ namespace DVLD_Project_Version_1._0.Users
                 return;
             }
 
-            _User.Password = txtNewPassword.Text.Trim();
+            _User.Password = clsUtil.ComputeHash(txtNewPassword.Text.Trim());
 
             if (_User.Save())
             {
