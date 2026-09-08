@@ -85,92 +85,219 @@ A full-scale **Driver and Vehicle Licensing Department** desktop application bui
 ## 🗂️ Solution Structure (4 Projects)
 
 ```
-DVLD Project Version 1.0.sln
-│
-├── DVLD_Common/                       [Shared Layer — Utilities]
-│   └── clsEventLog.cs                 # Centralized exception logger (Windows Event Log)
-│
-├── DVLD Project Version 1.0/          [Presentation Layer — WinForms]
-│   ├── frmMain.cs                     # MDI main window + menu navigation
-│   ├── Login/
-│   │   └── frmLogin.cs                # Login screen
-│   ├── People/
-│   │   ├── frmListPeople.cs           # List with filter
-│   │   ├── frmAddUpdatePerson.cs      # Add/Edit person
-│   │   ├── frmFindPerson.cs           # Find by national ID
-│   │   ├── frmShowPersonInfo.cs       # Full person card
-│   │   └── Controls/
-│   │       ├── ctrlPersonCard.cs          # Reusable person info display
-│   │       └── ctrlPersonCardWithFilter.cs # Filter + select person UserControl
-│   ├── Applications/
-│   │   ├── Application Types/         # List + edit application fees
-│   │   ├── Controls/
-│   │   │   └── ctrlApplicationBasicInfo.cs  # Reusable application info panel
-│   │   ├── LocalDrivingLicenseApplications/
-│   │   │   ├── frmAddUpdateLocalDrivingLicenseApplication.cs
-│   │   │   ├── frmListLocalDrivingLicenseApplications.cs
-│   │   │   ├── frmLocalDrivingLicenseApplicationInfo.cs
-│   │   │   └── ctrlDrivingLicenseApplicationInfo.cs
-│   │   ├── International License/
-│   │   ├── Release Detained License Application/
-│   │   ├── Renew Local License/
-│   │   └── ReplaceLostOrDemagedLicense/
-│   ├── Licenses/
-│   │   ├── Local Licenses/            # Issue, show, controls with filter
-│   │   ├── International License/     # Show international license info
-│   │   ├── Detained License/          # Detain screen
-│   │   └── frmShowPersonLicenseHistory.cs
-│   ├── Drivers/
-│   │   └── frmListDrivers.cs
-│   ├── Test/
-│   │   ├── frmListTestAppointment.cs  # Schedule test per type
-│   │   ├── frmScheduleTest.cs
-│   │   ├── frmTakeTest.cs
-│   │   ├── Test Types/                # List + edit test types
-│   │   └── Controls/                  # ctrlScheduleTest, ctrlScheduledTest
-│   ├── Users/
-│   │   ├── frmManageUsers.cs
-│   │   ├── frmAddUpdateUser.cs
-│   │   ├── frmUserInfo.cs
-│   │   ├── frmChangePassword.cs
-│   │   └── ctrlUserCard.cs
-│   └── Global Classes/
-│       ├── clsGlobal.cs               # CurrentUser session object
-│       ├── clsUtil.cs
-│       └── clsValidation.cs
-│
-├── DVLD-BusinessLayer/                [Business Logic Layer]
-│   ├── clsApplications.cs             # Base application class + enums
-│   ├── clsApplicationTypes.cs         # Application type fees management
-│   ├── clsLocalDrivingLicenseApplication.cs  # Full driving license workflow
-│   ├── clsLicense.cs                  # Local license
-│   ├── clsLicenseClass.cs             # License classes (motorcycle, car, truck...)
-│   ├── clsInternationalLicense.cs     # International license (extends Application)
-│   ├── clsDetainLicense.cs            # License detention
-│   ├── clsPerson.cs                   # Person entity
-│   ├── clsDriver.cs                   # Driver entity (linked to Person)
-│   ├── clsUser.cs                     # System user
-│   ├── clsTest.cs                     # Test result
-│   ├── clsTestAppointment.cs          # Test appointment
-│   ├── clsTestTypes.cs                # Vision / Written / Street
-│   └── clsCountry.cs                  # Country lookup
-│
-└── DVLD-DataAccessLayer/              [Data Access Layer]
-    ├── clsDataAccessSettings.cs       # Connection string
-    ├── clsPersonData.cs
-    ├── clsDriverData.cs
-    ├── clsUserData.cs
-    ├── clsApplicationData.cs
-    ├── clsApplicationTypesData.cs
-    ├── clsLocalDrivingLicenseApplicationData.cs
-    ├── clsLicenseData.cs
-    ├── clsLicenseClassData.cs
-    ├── clsInternationalLicensesData.cs
-    ├── clsDetainedLicenseData.cs
-    ├── clsTestData.cs
-    ├── clsTestAppointmentData.cs
-    ├── clsTestTypesData.cs
-    └── clsCountryData.cs
+Directory structure:
+└── bashichda-dvld-v1.0/
+    ├── README.md
+    ├── DVLD Project Version 1.0.sln
+    ├── DVLD Project Version 1.0/
+    │   ├── App.config
+    │   ├── DVLD Project Version 1.0.csproj
+    │   ├── frmMain.cs
+    │   ├── frmMain.Designer.cs
+    │   ├── frmMain.resx
+    │   ├── Program.cs
+    │   ├── Applications/
+    │   │   ├── Application Types/
+    │   │   │   ├── frmApplicationTypes.cs
+    │   │   │   ├── frmApplicationTypes.Designer.cs
+    │   │   │   ├── frmApplicationTypes.resx
+    │   │   │   ├── frmUpdateApplicationType.cs
+    │   │   │   ├── frmUpdateApplicationType.Designer.cs
+    │   │   │   └── frmUpdateApplicationType.resx
+    │   │   ├── Controls/
+    │   │   │   ├── ctrlApplicationBasicInfo.cs
+    │   │   │   ├── ctrlApplicationBasicInfo.Designer.cs
+    │   │   │   └── ctrlApplicationBasicInfo.resx
+    │   │   ├── International License/
+    │   │   │   ├── frmInternationalLicense.cs
+    │   │   │   ├── frmInternationalLicense.Designer.cs
+    │   │   │   ├── frmInternationalLicense.resx
+    │   │   │   ├── frmListInternationalLicenses.cs
+    │   │   │   ├── frmListInternationalLicenses.Designer.cs
+    │   │   │   └── frmListInternationalLicenses.resx
+    │   │   ├── LocalDrivingLicenseApplications/
+    │   │   │   ├── ctrlDrivingLicenseApplicationInfo.cs
+    │   │   │   ├── ctrlDrivingLicenseApplicationInfo.Designer.cs
+    │   │   │   ├── ctrlDrivingLicenseApplicationInfo.resx
+    │   │   │   ├── frmAddUpdateLocalDrivingLicenseApplication.cs
+    │   │   │   ├── frmAddUpdateLocalDrivingLicenseApplication.Designer.cs
+    │   │   │   ├── frmAddUpdateLocalDrivingLicenseApplication.resx
+    │   │   │   ├── frmListLocalDrivingLicenseApplications.cs
+    │   │   │   ├── frmListLocalDrivingLicenseApplications.Designer.cs
+    │   │   │   ├── frmListLocalDrivingLicenseApplications.resx
+    │   │   │   ├── frmLocalDrivingLicenseApplicationInfo.cs
+    │   │   │   ├── frmLocalDrivingLicenseApplicationInfo.Designer.cs
+    │   │   │   └── frmLocalDrivingLicenseApplicationInfo.resx
+    │   │   ├── Release Detained License Application/
+    │   │   │   ├── frmListDetainedLicense.cs
+    │   │   │   ├── frmListDetainedLicense.Designer.cs
+    │   │   │   ├── frmListDetainedLicense.resx
+    │   │   │   ├── frmReleaseDetainedLicense.cs
+    │   │   │   ├── frmReleaseDetainedLicense.Designer.cs
+    │   │   │   └── frmReleaseDetainedLicense.resx
+    │   │   ├── Renew Local License/
+    │   │   │   ├── frmRenewLocalDrivingLicenseApplication.cs
+    │   │   │   ├── frmRenewLocalDrivingLicenseApplication.Designer.cs
+    │   │   │   └── frmRenewLocalDrivingLicenseApplication.resx
+    │   │   └── ReplaceLostOrDemagedLicense/
+    │   │       ├── frmReplaceLostOrDemagedLicense.cs
+    │   │       ├── frmReplaceLostOrDemagedLicense.Designer.cs
+    │   │       └── frmReplaceLostOrDemagedLicense.resx
+    │   ├── Drivers/
+    │   │   ├── frmListDrivers.cs
+    │   │   ├── frmListDrivers.Designer.cs
+    │   │   └── frmListDrivers.resx
+    │   ├── Global Classes/
+    │   │   ├── clsGlobal.cs
+    │   │   ├── clsUtil.cs
+    │   │   └── clsValidation.cs
+    │   ├── Licenses/
+    │   │   ├── frmShowPersonLicenseHistory.cs
+    │   │   ├── frmShowPersonLicenseHistory.Designer.cs
+    │   │   ├── frmShowPersonLicenseHistory.resx
+    │   │   ├── Controls/
+    │   │   │   ├── ctrlDriverLicenses.cs
+    │   │   │   ├── ctrlDriverLicenses.Designer.cs
+    │   │   │   └── ctrlDriverLicenses.resx
+    │   │   ├── Detained License/
+    │   │   │   ├── frmDetainLicense.cs
+    │   │   │   ├── frmDetainLicense.Designer.cs
+    │   │   │   └── frmDetainLicense.resx
+    │   │   ├── International License/
+    │   │   │   ├── frmDriverShowInternationalLicenseInfo.cs
+    │   │   │   ├── frmDriverShowInternationalLicenseInfo.Designer.cs
+    │   │   │   ├── frmDriverShowInternationalLicenseInfo.resx
+    │   │   │   └── Control/
+    │   │   │       ├── ctrlDriverInternationalLicenseInfo.cs
+    │   │   │       ├── ctrlDriverInternationalLicenseInfo.Designer.cs
+    │   │   │       └── ctrlDriverInternationalLicenseInfo.resx
+    │   │   └── Local Licenses/
+    │   │       ├── frmIssueDriverLicenseFirstTime.cs
+    │   │       ├── frmIssueDriverLicenseFirstTime.Designer.cs
+    │   │       ├── frmIssueDriverLicenseFirstTime.resx
+    │   │       ├── frmShowDriverLicenseInfo.cs
+    │   │       ├── frmShowDriverLicenseInfo.Designer.cs
+    │   │       ├── frmShowDriverLicenseInfo.resx
+    │   │       └── Controls/
+    │   │           ├── ctrlDriverLicenseInfo.cs
+    │   │           ├── ctrlDriverLicenseInfo.Designer.cs
+    │   │           ├── ctrlDriverLicenseInfo.resx
+    │   │           ├── ctrlDriverLicenseInfoWithFilter.cs
+    │   │           ├── ctrlDriverLicenseInfoWithFilter.Designer.cs
+    │   │           └── ctrlDriverLicenseInfoWithFilter.resx
+    │   ├── Login/
+    │   │   ├── frmLogin.cs
+    │   │   ├── frmLogin.Designer.cs
+    │   │   └── frmLogin.resx
+    │   ├── People/
+    │   │   ├── frmAddUpdatePerson.cs
+    │   │   ├── frmAddUpdatePerson.Designer.cs
+    │   │   ├── frmAddUpdatePerson.resx
+    │   │   ├── frmFindPerson.cs
+    │   │   ├── frmFindPerson.Designer.cs
+    │   │   ├── frmFindPerson.resx
+    │   │   ├── frmListPeople.cs
+    │   │   ├── frmListPeople.Designer.cs
+    │   │   ├── frmListPeople.resx
+    │   │   ├── frmShowPersonInfo.cs
+    │   │   ├── frmShowPersonInfo.Designer.cs
+    │   │   ├── frmShowPersonInfo.resx
+    │   │   └── Controls/
+    │   │       ├── ctrlPersonCard.cs
+    │   │       ├── ctrlPersonCard.Designer.cs
+    │   │       ├── ctrlPersonCard.resx
+    │   │       ├── ctrlPersonCardWithFilter.cs
+    │   │       ├── ctrlPersonCardWithFilter.Designer.cs
+    │   │       └── ctrlPersonCardWithFilter.resx
+    │   ├── Properties/
+    │   │   ├── AssemblyInfo.cs
+    │   │   ├── Resources.Designer.cs
+    │   │   ├── Resources.resx
+    │   │   ├── Settings.Designer.cs
+    │   │   └── Settings.settings
+    │   ├── Test/
+    │   │   ├── frmListTestAppointment.cs
+    │   │   ├── frmListTestAppointment.Designer.cs
+    │   │   ├── frmListTestAppointment.resx
+    │   │   ├── frmScheduleTest.cs
+    │   │   ├── frmScheduleTest.Designer.cs
+    │   │   ├── frmScheduleTest.resx
+    │   │   ├── frmTakeTest.cs
+    │   │   ├── frmTakeTest.Designer.cs
+    │   │   ├── frmTakeTest.resx
+    │   │   ├── Controls/
+    │   │   │   ├── ctrlScheduledTest.cs
+    │   │   │   ├── ctrlScheduledTest.Designer.cs
+    │   │   │   ├── ctrlScheduledTest.resx
+    │   │   │   ├── ctrlScheduleTest.cs
+    │   │   │   ├── ctrlScheduleTest.Designer.cs
+    │   │   │   └── ctrlScheduleTest.resx
+    │   │   └── Test Types/
+    │   │       ├── frmEditTestTypes.cs
+    │   │       ├── frmEditTestTypes.Designer.cs
+    │   │       ├── frmEditTestTypes.resx
+    │   │       ├── frmListTestTypes.cs
+    │   │       ├── frmListTestTypes.Designer.cs
+    │   │       └── frmListTestTypes.resx
+    │   └── Users/
+    │       ├── ctrlUserCard.cs
+    │       ├── ctrlUserCard.Designer.cs
+    │       ├── ctrlUserCard.resx
+    │       ├── frmAddUpdateUser.cs
+    │       ├── frmAddUpdateUser.Designer.cs
+    │       ├── frmAddUpdateUser.resx
+    │       ├── frmChangePassword.cs
+    │       ├── frmChangePassword.Designer.cs
+    │       ├── frmChangePassword.resx
+    │       ├── frmManageUsers.cs
+    │       ├── frmManageUsers.Designer.cs
+    │       ├── frmManageUsers.resx
+    │       ├── frmUserInfo.cs
+    │       ├── frmUserInfo.Designer.cs
+    │       └── frmUserInfo.resx
+    ├── DVLD-BusinessLayer/
+    │   ├── clsApplications.cs
+    │   ├── clsApplicationTypes.cs
+    │   ├── clsCountry.cs
+    │   ├── clsDetainLicense.cs
+    │   ├── clsDriver.cs
+    │   ├── clsInternationalLicense.cs
+    │   ├── clsLicense.cs
+    │   ├── clsLicenseClass.cs
+    │   ├── clsLocalDrivingLicenseApplication.cs
+    │   ├── clsPerson.cs
+    │   ├── clsTest.cs
+    │   ├── clsTestAppointment.cs
+    │   ├── clsTestTypes.cs
+    │   ├── clsUser.cs
+    │   ├── DVLD-BusinessLayer.csproj
+    │   └── Properties/
+    │       └── AssemblyInfo.cs
+    ├── DVLD-DataAccessLayer/
+    │   ├── clsApplicationData.cs
+    │   ├── clsApplicationTypesData.cs
+    │   ├── clsCountryData.cs
+    │   ├── clsDataAccessSettings.cs
+    │   ├── clsDetainedLicenseData.cs
+    │   ├── clsDriverData.cs
+    │   ├── clsInternationalLicensesData.cs
+    │   ├── clsLicenseClassData.cs
+    │   ├── clsLicenseData.cs
+    │   ├── clsLocalDrivingLicenseApplicationData.cs
+    │   ├── clsPersonData.cs
+    │   ├── clsTestAppointmentData.cs
+    │   ├── clsTestData.cs
+    │   ├── clsTestTypesData.cs
+    │   ├── clsUserData.cs
+    │   ├── DVLD-DataAccessLayer.csproj
+    │   └── Properties/
+    │       └── AssemblyInfo.cs
+    └── DVLD_Common/
+        ├── clsEventLog.cs
+        ├── DVLD_Common.csproj
+        └── Properties/
+            └── AssemblyInfo.cs
+
 ```
 
 ---
@@ -269,7 +396,7 @@ One of the strongest design decisions in this project — reusable UserControls 
 ### Setup
 
 1. Restore or create the DVLD SQL Server database
-2. Update the connection string in `DVLD-DataAccessLayer/clsDataAccessSettings.cs`:
+2. Copy `App.config.example` to `App.config` in the Presentation Layer project and fill in your credentials:
    ```csharp
    public static string connectionString =
        "Server=YOUR_SERVER;Database=DVLD;User Id=YOUR_USER;Password=YOUR_PASSWORD;";
@@ -354,6 +481,7 @@ string pass = Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\DVLD", "Password", 
 - **Language:** C# (.NET Framework 4.7.2)
 - **UI:** Windows Forms — Forms, UserControls, MDI, MenuStrip, DataGridView, TabControl, ContextMenuStrip, ErrorProvider, LinkLabel
 - **Database:** SQL Server (`System.Data.SqlClient`) — parameterized queries
+- **Config:** `App.config` + `ConfigurationManager` — connection string outside source code
 - **Storage:** Windows Registry (`Microsoft.Win32`) — credential persistence
 - **Logging:** Windows Event Log (`System.Diagnostics.EventLog`) — exception audit trail
 - **Architecture:** 3-Layer / N-Tier — 3 separate `.csproj` DLL projects
@@ -363,7 +491,7 @@ string pass = Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\DVLD", "Password", 
 
 ## 🔮 Possible Improvements
 
-- [ ] Move connection string to `App.config` and add to `.gitignore`
+- [ ] Replace plain `sa` credentials with a dedicated SQL Server user with minimal permissions
 - [ ] Hash or encrypt stored credentials — use `ProtectedData` (DPAPI) instead of plain registry strings
 - [ ] Add **password hashing** for DB-stored passwords (currently plain text)
 - [ ] Add **audit log** — track who did what and when (event log covers errors; extend to user actions)
